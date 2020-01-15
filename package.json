@@ -4,16 +4,24 @@
   "description": "CSS Framework",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "browser-sync start --config bs-config.js",
+    "clean": "rm -r dist/css/",
+    "prefixer": "postcss dist/css/nicy.css --use=autoprefixer --map=false --output=dist/css/nicy.min.css",
+    "minify": "cleancss --level=1 --source-map --source-map-inline-sources --output=dist/css/nicy.min.css dist/css/nicy.min.css",
+    "watch:css": "npx node-sass src/scss -wo dist/css --indent-type=space --indent-width=2 --output-style=expanded --source-map=true",
+    "dev:css": "npx node-sass src/scss -o dist/css --source-map=true --output-style=expanded",
+    "build:css": "npm-run-all clean dev:css prefixer minify",
+    "build:all": "npm-run-all build:css",
+    "serve": "npm-run-all --parallel server watch:css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bvlad05/nicy.git"
   },
   "keywords": [
-    "CSS",
-    "Framework",
-    "UI"
+    "css",
+    "framework",
+    "ui"
   ],
   "author": "Vladyslav Bondarenko",
   "license": "MIT",
@@ -22,9 +30,18 @@
   },
   "homepage": "https://github.com/bvlad05/nicy#readme",
   "devDependencies": {
-    "node-sass": "^4.13.0"
+    "autoprefixer": "^9.7.4",
+    "browser-sync": "^2.26.7",
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^4.13.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.0"
   },
+  "files": [
+    "dist/css/*.{css,map}",
+    "src/scss/**/*.scss"
+  ],
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "dart-sass": "^1.24.4"
   }
 }

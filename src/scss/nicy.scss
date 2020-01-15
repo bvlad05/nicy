@@ -1,0 +1,20 @@
+@import 'core/colors';
+
+html {
+  font-size: 15px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $dark;
+  text-align: left;
+  background-color: #fff;
+}

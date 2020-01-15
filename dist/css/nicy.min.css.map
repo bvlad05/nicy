@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/scss/nicy.scss"],"names":[],"mappings":"AAAA,KACE,MAAA,IACA,UAAA,KACA,wBAAA,UAAA,gBAAA","sourcesContent":["body {\n  color: red;\n  font-size: 30px;\n  backdrop-filter: blur(3px);\n}\n\n// COOL\n"]}

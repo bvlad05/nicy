@@ -1,0 +1,35 @@
+/*
+Colors
+Added in: v0.0.1
+*/
+
+$light: #e2e5f0;
+$dark: #0b1023;
+$primary: #23aaec;
+$success: #68bb35;
+$warning: #ffa43c;
+$danger: #ff5656;
+
+@mixin generateColors($name, $color) {
+  .text-color-#{$name} {
+    color: $color;
+  }
+  .bg-color-#{$name} {
+    background-color: $color;
+  }
+  @for $i from 1 through 6  {
+    .text-color-#{$name}-#{$i} {
+      color: rgba($color, $i + 1%);
+    }
+    .bg-color-#{$name}-#{$i} {
+      background-color: rgba($color, 1 - (.15 * $i));
+    }
+  }
+}
+
+@include generateColors('light', $light);
+@include generateColors('dark', $dark);
+@include generateColors('primary', $primary);
+@include generateColors('success', $success);
+@include generateColors('warning', $warning);
+@include generateColors('danger', $danger);

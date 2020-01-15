@@ -81,24 +81,24 @@ select {
 }
 
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -123,23 +123,23 @@ textarea {
   overflow: auto;
 }
 
-[type="checkbox"],
-[type="radio"] {
+[type=checkbox],
+[type=radio] {
   box-sizing: border-box;
   padding: 0;
 }
 
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
-[type="search"] {
+[type=search] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
 
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -177,7 +177,7 @@ Added in: v0.0.1
 }
 
 .text-color-light-1 {
-  color: #e2e5f0;
+  color: #e9ebf3;
 }
 
 .bg-color-light-1 {
@@ -185,7 +185,7 @@ Added in: v0.0.1
 }
 
 .text-color-light-2 {
-  color: #e2e5f0;
+  color: #eceef5;
 }
 
 .bg-color-light-2 {
@@ -193,7 +193,7 @@ Added in: v0.0.1
 }
 
 .text-color-light-3 {
-  color: #e2e5f0;
+  color: #eff1f7;
 }
 
 .bg-color-light-3 {
@@ -201,7 +201,7 @@ Added in: v0.0.1
 }
 
 .text-color-light-4 {
-  color: #e2e5f0;
+  color: #f3f4f9;
 }
 
 .bg-color-light-4 {
@@ -209,19 +209,11 @@ Added in: v0.0.1
 }
 
 .text-color-light-5 {
-  color: #e2e5f0;
+  color: #f6f7fa;
 }
 
 .bg-color-light-5 {
   background-color: rgba(226, 229, 240, 0.25);
-}
-
-.text-color-light-6 {
-  color: #e2e5f0;
-}
-
-.bg-color-light-6 {
-  background-color: rgba(226, 229, 240, 0.1);
 }
 
 .text-color-dark {
@@ -233,7 +225,7 @@ Added in: v0.0.1
 }
 
 .text-color-dark-1 {
-  color: #0b1023;
+  color: #0d142b;
 }
 
 .bg-color-dark-1 {
@@ -241,7 +233,7 @@ Added in: v0.0.1
 }
 
 .text-color-dark-2 {
-  color: #0b1023;
+  color: #0f152f;
 }
 
 .bg-color-dark-2 {
@@ -249,7 +241,7 @@ Added in: v0.0.1
 }
 
 .text-color-dark-3 {
-  color: #0b1023;
+  color: #101733;
 }
 
 .bg-color-dark-3 {
@@ -257,7 +249,7 @@ Added in: v0.0.1
 }
 
 .text-color-dark-4 {
-  color: #0b1023;
+  color: #111936;
 }
 
 .bg-color-dark-4 {
@@ -265,19 +257,11 @@ Added in: v0.0.1
 }
 
 .text-color-dark-5 {
-  color: #0b1023;
+  color: #121b3a;
 }
 
 .bg-color-dark-5 {
   background-color: rgba(11, 16, 35, 0.25);
-}
-
-.text-color-dark-6 {
-  color: #0b1023;
-}
-
-.bg-color-dark-6 {
-  background-color: rgba(11, 16, 35, 0.1);
 }
 
 .text-color-primary {
@@ -289,7 +273,7 @@ Added in: v0.0.1
 }
 
 .text-color-primary-1 {
-  color: #23aaec;
+  color: #2caeed;
 }
 
 .bg-color-primary-1 {
@@ -297,7 +281,7 @@ Added in: v0.0.1
 }
 
 .text-color-primary-2 {
-  color: #23aaec;
+  color: #31afed;
 }
 
 .bg-color-primary-2 {
@@ -305,7 +289,7 @@ Added in: v0.0.1
 }
 
 .text-color-primary-3 {
-  color: #23aaec;
+  color: #36b1ee;
 }
 
 .bg-color-primary-3 {
@@ -313,7 +297,7 @@ Added in: v0.0.1
 }
 
 .text-color-primary-4 {
-  color: #23aaec;
+  color: #3ab3ee;
 }
 
 .bg-color-primary-4 {
@@ -321,19 +305,11 @@ Added in: v0.0.1
 }
 
 .text-color-primary-5 {
-  color: #23aaec;
+  color: #3fb5ee;
 }
 
 .bg-color-primary-5 {
   background-color: rgba(35, 170, 236, 0.25);
-}
-
-.text-color-primary-6 {
-  color: #23aaec;
-}
-
-.bg-color-primary-6 {
-  background-color: rgba(35, 170, 236, 0.1);
 }
 
 .text-color-success {
@@ -345,7 +321,7 @@ Added in: v0.0.1
 }
 
 .text-color-success-1 {
-  color: #68bb35;
+  color: #6cc337;
 }
 
 .bg-color-success-1 {
@@ -353,7 +329,7 @@ Added in: v0.0.1
 }
 
 .text-color-success-2 {
-  color: #68bb35;
+  color: #6fc739;
 }
 
 .bg-color-success-2 {
@@ -361,7 +337,7 @@ Added in: v0.0.1
 }
 
 .text-color-success-3 {
-  color: #68bb35;
+  color: #72c83d;
 }
 
 .bg-color-success-3 {
@@ -369,7 +345,7 @@ Added in: v0.0.1
 }
 
 .text-color-success-4 {
-  color: #68bb35;
+  color: #74c940;
 }
 
 .bg-color-success-4 {
@@ -377,19 +353,11 @@ Added in: v0.0.1
 }
 
 .text-color-success-5 {
-  color: #68bb35;
+  color: #77ca44;
 }
 
 .bg-color-success-5 {
   background-color: rgba(104, 187, 53, 0.25);
-}
-
-.text-color-success-6 {
-  color: #68bb35;
-}
-
-.bg-color-success-6 {
-  background-color: rgba(104, 187, 53, 0.1);
 }
 
 .text-color-warning {
@@ -401,7 +369,7 @@ Added in: v0.0.1
 }
 
 .text-color-warning-1 {
-  color: #ffa43c;
+  color: #ffa946;
 }
 
 .bg-color-warning-1 {
@@ -409,7 +377,7 @@ Added in: v0.0.1
 }
 
 .text-color-warning-2 {
-  color: #ffa43c;
+  color: #ffab4b;
 }
 
 .bg-color-warning-2 {
@@ -417,7 +385,7 @@ Added in: v0.0.1
 }
 
 .text-color-warning-3 {
-  color: #ffa43c;
+  color: #ffae50;
 }
 
 .bg-color-warning-3 {
@@ -425,7 +393,7 @@ Added in: v0.0.1
 }
 
 .text-color-warning-4 {
-  color: #ffa43c;
+  color: #ffb056;
 }
 
 .bg-color-warning-4 {
@@ -433,19 +401,11 @@ Added in: v0.0.1
 }
 
 .text-color-warning-5 {
-  color: #ffa43c;
+  color: #ffb25b;
 }
 
 .bg-color-warning-5 {
   background-color: rgba(255, 164, 60, 0.25);
-}
-
-.text-color-warning-6 {
-  color: #ffa43c;
-}
-
-.bg-color-warning-6 {
-  background-color: rgba(255, 164, 60, 0.1);
 }
 
 .text-color-danger {
@@ -457,7 +417,7 @@ Added in: v0.0.1
 }
 
 .text-color-danger-1 {
-  color: #ff5656;
+  color: #ff6060;
 }
 
 .bg-color-danger-1 {
@@ -465,7 +425,7 @@ Added in: v0.0.1
 }
 
 .text-color-danger-2 {
-  color: #ff5656;
+  color: #ff6565;
 }
 
 .bg-color-danger-2 {
@@ -473,7 +433,7 @@ Added in: v0.0.1
 }
 
 .text-color-danger-3 {
-  color: #ff5656;
+  color: #ff6a6a;
 }
 
 .bg-color-danger-3 {
@@ -481,7 +441,7 @@ Added in: v0.0.1
 }
 
 .text-color-danger-4 {
-  color: #ff5656;
+  color: #ff7070;
 }
 
 .bg-color-danger-4 {
@@ -489,19 +449,11 @@ Added in: v0.0.1
 }
 
 .text-color-danger-5 {
-  color: #ff5656;
+  color: #ff7575;
 }
 
 .bg-color-danger-5 {
   background-color: rgba(255, 86, 86, 0.25);
-}
-
-.text-color-danger-6 {
-  color: #ff5656;
-}
-
-.bg-color-danger-6 {
-  background-color: rgba(255, 86, 86, 0.1);
 }
 
 html {
@@ -515,12 +467,14 @@ body {
 
 body {
   margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #0b1023;
   text-align: left;
   background-color: #fff;
+  -webkit-text-size-adjust: 100%;
 }
 
 /*# sourceMappingURL=nicy.css.map */
