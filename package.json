@@ -1,0 +1,30 @@
+{
+  "name": "nicy",
+  "version": "0.0.1",
+  "description": "CSS Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bvlad05/nicy.git"
+  },
+  "keywords": [
+    "CSS",
+    "Framework",
+    "UI"
+  ],
+  "author": "Vladyslav Bondarenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bvlad05/nicy/issues"
+  },
+  "homepage": "https://github.com/bvlad05/nicy#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
