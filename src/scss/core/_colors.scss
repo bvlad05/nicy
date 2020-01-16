@@ -27,9 +27,9 @@ $danger: #ff5656;
   }
 }
 
-@include generateColors('light', $light);
-@include generateColors('dark', $dark);
-@include generateColors('primary', $primary);
-@include generateColors('success', $success);
-@include generateColors('warning', $warning);
-@include generateColors('danger', $danger);
+@include generateColors("light", $light);
+@include generateColors("dark", $dark);
+@include generateColors("primary", $primary);
+@include generateColors("success", $success);
+@include generateColors("warning", $warning);
+@include generateColors("danger", $danger);
