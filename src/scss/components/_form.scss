@@ -1,0 +1,113 @@
+/*
+Form
+Added in: v0.0.1
+*/
+@import "../core/variables/variables";
+@import "../core/mixins/mixins";
+
+// Variables, Mixins
+$input_border_radius: $base_border_radius;
+$input_transition: $base_transition;
+
+$input_small_padding: $base_elem_small_padding;
+$input_normal_padding: $base_elem_normal_padding;
+$input_large_padding: $base_elem_large_padding;
+
+$input_focus_shadow: $base_elem_focus_shadow;
+$input_focus_opacity: $base_elem_focus_opacity;
+$input_disabled_background: rgba($dark, .03);
+
+$input_border_color: darken($light, 10%);
+
+@mixin inputIsSmall() {
+  font-size: .8rem;
+  padding: $input_small_padding;
+}
+
+@mixin inputIsLarge() {
+  font-size: 1.2rem;
+  padding: $input_large_padding;
+}
+
+::-webkit-input-placeholder {
+  color: rgba($dark, .3);
+}
+
+:-ms-input-placeholder {
+  color: rgba($dark, .3);
+}
+
+::placeholder {
+  color: rgba($dark, .3);
+}
+
+.form {
+  &-field {
+
+  }
+
+  &-label {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: .2rem;
+    font-size: .8rem;
+    font-weight: 500;
+  }
+
+  &-input {
+    border-radius: $input_border_radius;
+    display: inline-block;
+    width: 100%;
+    border: 1px solid $input_border_color;
+    padding: $input_normal_padding;
+    box-shadow: 0 0 0 0 transparent;
+    transition: $input_transition;
+    background-color: #fff;
+    &:focus {
+      box-shadow: $input_focus_shadow rgba($primary, $input_focus_opacity);
+      border-color: $primary;
+      outline: none;
+    }
+    & ~ .msg {
+      margin: .2rem 0 0 0;
+      font-size: .8rem;
+      font-weight: 500;
+    }
+    &.is-valid {
+      border-color: $success;
+      &:focus {
+        box-shadow: $input_focus_shadow rgba($success, $input_focus_opacity);
+      }
+      & ~ .msg {
+        color: $success;
+      }
+    }
+    &.is-invalid {
+      border-color: $danger;
+      &:focus {
+        box-shadow: $input_focus_shadow rgba($danger, $input_focus_opacity);
+      }
+      & ~ .msg {
+        color: $danger;
+      }
+    }
+    &.is-small {
+      @include inputIsSmall;
+    }
+
+    &.is-large {
+      @include inputIsLarge;
+    }
+    &[readonly] {
+      padding-left: 0;
+      padding-right: 0;
+      box-shadow: none;
+      background-color: transparent;
+      border: none;
+    }
+    &[disabled] {
+      background-color: $input_disabled_background;
+      border-color: lighten($input_border_color, 7%);
+    }
+  }
+}

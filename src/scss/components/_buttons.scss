@@ -20,19 +20,18 @@ Added in: v0.0.1
 $btn_border_radius: $base_border_radius;
 $btn_transition: $base_transition;
 
-$btn_small_padding: .4em .8em;
-$btn_normal_padding: .5em 1em;
-$btn_large_padding: .6em 1.2em;
+$btn_small_padding: $base_elem_small_padding;
+$btn_normal_padding: $base_elem_normal_padding;
+$btn_large_padding: $base_elem_large_padding;
+
+$btn_focus_shadow: $base_elem_focus_shadow;
+$btn_focus_opacity: $base_elem_focus_opacity;
+$btn_disabled_opacity: $base_elem_disabled_opacity;
 
 $btn_shadow_opacity: .4;
 $btn_shadow_regular: 0 5px 8px;
 $btn_shadow_hover: 0 2px 3px;
 $btn_shadow_active: 0 1px 1px;
-
-$btn_focus_shadow: 0 0 0 .15em;
-$btn_focus_opacity: .2;
-
-$btn_disabled_opacity: .65;
 
 @mixin btnIsBlock() {
   display: block;

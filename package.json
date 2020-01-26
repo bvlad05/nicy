@@ -2,7 +2,7 @@
   "name": "nicy",
   "version": "0.0.1",
   "description": "CSS Framework",
-  "main": "index.js",
+  "main": "nicy/src/scss/nicy.scss",
   "scripts": {
     "server": "browser-sync start --config bs-config.js",
     "clean": "rm -r dist/css/",
@@ -23,7 +23,10 @@
     "framework",
     "ui"
   ],
-  "author": "Vladyslav Bondarenko",
+  "author": {
+    "name": "Vladyslav Bondarenko",
+    "email": "vlad.bond05@gmail.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bvlad05/nicy/issues"

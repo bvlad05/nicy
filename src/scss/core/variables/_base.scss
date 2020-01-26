@@ -1,2 +1,11 @@
 $base_border_radius: .2em;
 $base_transition: ease-in-out .15s;
+
+// Buttons, forms
+$base_elem_small_padding: .4em .8em;
+$base_elem_normal_padding: .45em .9em;
+$base_elem_large_padding: .6em 1.2em;
+
+$base_elem_focus_shadow: 0 0 0 .15em;
+$base_elem_focus_opacity: .2;
+$base_elem_disabled_opacity: .65;
