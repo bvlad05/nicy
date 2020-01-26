@@ -8,7 +8,7 @@
     "clean": "rm -r dist/css/",
     "prefixer": "postcss dist/css/nicy.css --use=autoprefixer --map=false --output=dist/css/nicy.min.css",
     "minify": "cleancss --level=1 --source-map --source-map-inline-sources --output=dist/css/nicy.min.css dist/css/nicy.min.css",
-    "watch:css": "npx node-sass src/scss -wo dist/css --indent-type=space --indent-width=2 --output-style=expanded --source-map=true",
+    "watch:css": "node-sass src/scss -wo dist/css --indent-type=space --indent-width=2 --output-style=expanded --source-map=true",
     "dev:css": "npx node-sass src/scss -o dist/css --source-map=true --output-style=expanded",
     "build:css": "npm-run-all clean dev:css prefixer minify",
     "build:all": "npm-run-all build:css",

@@ -2,8 +2,8 @@
 Buttons
 Added in: v0.0.1
 */
-@import "../core/colors";
-@import "../core/base";
+@import "../core/variables/variables";
+@import "../core/mixins/mixins";
 
 @keyframes loadingRotate {
   0% {
@@ -34,23 +34,42 @@ $btn_focus_opacity: .2;
 
 $btn_disabled_opacity: .65;
 
-@mixin genButton($className, $color, $text_color) {
+@mixin btnIsBlock() {
+  display: block;
+  width: 100%;
+}
+
+@mixin btnIsSmall() {
+  font-size: .8rem;
+  padding: $btn_small_padding;
+}
+
+@mixin btnIsLarge() {
+  font-size: 1.2rem;
+  padding: $btn_large_padding;
+}
+
+@mixin btn($className, $color, $text_color) {
   .btn {
     &.is-#{$className} {
       background-color: $color;
       box-shadow: $btn_shadow_regular rgba($color, $btn_shadow_opacity);
       color: $text_color;
+
       &:hover {
         background-color: lighten($color, 3%);
         box-shadow: $btn_shadow_hover rgba($color, $btn_shadow_opacity);
       }
+
       &:active {
         background-color: darken($color, 3%);
         box-shadow: $btn_shadow_active rgba($color, $btn_shadow_opacity);
       }
+
       &:focus {
         box-shadow: $btn_focus_shadow rgba($color, $btn_focus_opacity);
       }
+
       &.is-loading {
         &::after {
           border: 2px solid rgba($text_color, .3);
@@ -58,6 +77,7 @@ $btn_disabled_opacity: .65;
         }
       }
     }
+
     &.is-outline-#{$className} {
       background-color: rgba($color, .12);
       box-shadow: none;
@@ -68,15 +88,19 @@ $btn_disabled_opacity: .65;
         color: $color;
         border: 1px solid rgba($color, .3);
       }
+
       &:hover {
         background-color: rgba($color, .08);
       }
+
       &:active {
         background-color: rgba($color, .2);
       }
+
       &:focus {
         box-shadow: $btn_focus_shadow rgba($color, $btn_focus_opacity);
       }
+
       &.is-loading {
         &::after {
           @if ($className == 'light') {
@@ -104,27 +128,32 @@ $btn_disabled_opacity: .65;
   border-radius: $btn_border_radius;
   box-shadow: $btn_shadow_regular rgba($light, $btn_shadow_opacity);
   transition: $btn_transition;
+  text-align: center;
+
   &:hover,
   &:active,
   &:focus {
     outline: none;
     text-decoration: none;
   }
+
   &.is-small {
-    font-size: .8rem;
-    padding: $btn_small_padding;
+    @include btnIsSmall;
   }
+
   &.is-large {
-    font-size: 1.2rem;
-    padding: $btn_large_padding;
+    @include btnIsLarge;
   }
+
   &[disabled] {
     opacity: $btn_disabled_opacity;
-    box-shadow: none!important;
+    box-shadow: none !important;
     cursor: not-allowed;
   }
+
   &.is-loading {
-    color: transparent!important;
+    color: transparent !important;
+
     &::after {
       content: '';
       width: 1.25em;
@@ -137,11 +166,28 @@ $btn_disabled_opacity: .65;
       animation: loadingRotate .4s linear infinite;
     }
   }
+
+  &.is-block {
+    @include btnIsBlock;
+  }
 }
 
-@include genButton('light', $light, $dark);
-@include genButton('dark', $dark, #fff);
-@include genButton('primary', $primary, #fff);
-@include genButton('success', $success, #fff);
-@include genButton('warning', $warning, #fff);
-@include genButton('danger', $danger, #fff);
+// Responsive
+@include generate-responsive('.btn.is-block') {
+  @include btnIsBlock;
+}
+
+@include generate-responsive('.btn.is-small') {
+  @include btnIsSmall;
+}
+
+@include generate-responsive('.btn.is-large') {
+  @include btnIsLarge;
+}
+
+@include btn('light', $light, $dark);
+@include btn('dark', $dark, #fff);
+@include btn('primary', $primary, #fff);
+@include btn('success', $success, #fff);
+@include btn('warning', $warning, #fff);
+@include btn('danger', $danger, #fff);

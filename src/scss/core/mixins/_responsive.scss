@@ -1,0 +1,11 @@
+@import "../variables/variables";
+
+@mixin generate-responsive($className) {
+  @each $name, $width in $breakpoints {
+    #{$className}-#{$name} {
+      @media (min-width: $width) {
+        @content
+      }
+    }
+  }
+}
