@@ -19,6 +19,10 @@ $input_disabled_background: rgba($dark, .03);
 
 $input_border_color: darken($light, 10%);
 
+$selector_width: 1.1rem;
+$selector_height: 1.1rem;
+$selector_border_color: darken($light, 20%);
+
 @mixin inputIsSmall() {
   font-size: .8rem;
   padding: $input_small_padding;
@@ -27,6 +31,70 @@ $input_border_color: darken($light, 10%);
 @mixin inputIsLarge() {
   font-size: 1.2rem;
   padding: $input_large_padding;
+}
+
+@mixin validationFormStyle($type, $color) {
+  &.is-#{$type} {
+    > i[class^="lni"],
+    > i[class^="fa"],
+    > .form-label {
+      color: $color;
+    }
+
+    .form-input,
+    .form-select {
+      border-color: $color;
+
+      &:focus {
+        box-shadow: $input_focus_shadow rgba($color, $input_focus_opacity);
+      }
+
+      .form-label,
+      > i[class^="lni"],
+      > i[class^="fa"],
+      & ~ .msg {
+        color: $color;
+      }
+    }
+
+    .form-selector {
+      &:focus ~ .form-label::before {
+        box-shadow: $input_focus_shadow rgba($color, $input_focus_opacity);
+      }
+
+      &[type="checkbox"] {
+        ~ .form-label {
+          &::before {
+            border-color: $color;
+          }
+        }
+
+        &:checked {
+          ~ .form-label {
+            &::before {
+              background-color: $color;
+            }
+          }
+        }
+      }
+
+      &[type="radio"] {
+        ~ .form-label {
+          &::before {
+            border-color: $color;
+          }
+        }
+
+        &:checked {
+          ~ .form-label {
+            &::after {
+              background-color: $color;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 ::-webkit-input-placeholder {
@@ -43,7 +111,37 @@ $input_border_color: darken($light, 10%);
 
 .form {
   &-field {
+    position: relative;
 
+    // Is valid
+    > i[class^="lni"],
+    > i[class^="fa"] {
+      position: absolute;
+      font-size: 1em;
+      top: .8em;
+      left: .7em;
+      color: rgba($dark, .7);
+      z-index: 2;
+
+      ~ [class*="form-input"],
+      ~ [class*="form-select"] {
+        padding-left: 2em;
+      }
+
+      &.is-small {
+        top: .8em;
+        font-size: .8em;
+      }
+
+      &.is-large {
+        top: .95em;
+        font-size: 1.2em;
+      }
+    }
+
+    // Validation form styles
+    @include validationFormStyle("valid", $success);
+    @include validationFormStyle("invalid", $danger);
   }
 
   &-label {
@@ -54,6 +152,7 @@ $input_border_color: darken($light, 10%);
     font-weight: 500;
   }
 
+  &-select,
   &-input {
     border-radius: $input_border_radius;
     display: inline-block;
@@ -63,34 +162,19 @@ $input_border_color: darken($light, 10%);
     box-shadow: 0 0 0 0 transparent;
     transition: $input_transition;
     background-color: #fff;
+
     &:focus {
       box-shadow: $input_focus_shadow rgba($primary, $input_focus_opacity);
       border-color: $primary;
       outline: none;
     }
+
     & ~ .msg {
       margin: .2rem 0 0 0;
       font-size: .8rem;
       font-weight: 500;
     }
-    &.is-valid {
-      border-color: $success;
-      &:focus {
-        box-shadow: $input_focus_shadow rgba($success, $input_focus_opacity);
-      }
-      & ~ .msg {
-        color: $success;
-      }
-    }
-    &.is-invalid {
-      border-color: $danger;
-      &:focus {
-        box-shadow: $input_focus_shadow rgba($danger, $input_focus_opacity);
-      }
-      & ~ .msg {
-        color: $danger;
-      }
-    }
+
     &.is-small {
       @include inputIsSmall;
     }
@@ -98,16 +182,152 @@ $input_border_color: darken($light, 10%);
     &.is-large {
       @include inputIsLarge;
     }
+
     &[readonly] {
-      padding-left: 0;
-      padding-right: 0;
+      // padding-left: 0;
+      // padding-right: 0;
       box-shadow: none;
       background-color: transparent;
-      border: none;
+      border-color: $light;
     }
+
     &[disabled] {
       background-color: $input_disabled_background;
       border-color: lighten($input_border_color, 7%);
     }
+  }
+
+  &-select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: #fff url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDI5Mi4zNjIgMjkyLjM2MiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjkyLjM2MiAyOTIuMzYyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PGc+Cgk8cGF0aCBkPSJNMjg2LjkzNSw2OS4zNzdjLTMuNjE0LTMuNjE3LTcuODk4LTUuNDI0LTEyLjg0OC01LjQyNEgxOC4yNzRjLTQuOTUyLDAtOS4yMzMsMS44MDctMTIuODUsNS40MjQgICBDMS44MDcsNzIuOTk4LDAsNzcuMjc5LDAsODIuMjI4YzAsNC45NDgsMS44MDcsOS4yMjksNS40MjQsMTIuODQ3bDEyNy45MDcsMTI3LjkwN2MzLjYyMSwzLjYxNyw3LjkwMiw1LjQyOCwxMi44NSw1LjQyOCAgIHM5LjIzMy0xLjgxMSwxMi44NDctNS40MjhMMjg2LjkzNSw5NS4wNzRjMy42MTMtMy42MTcsNS40MjctNy44OTgsNS40MjctMTIuODQ3QzI5Mi4zNjIsNzcuMjc5LDI5MC41NDgsNzIuOTk4LDI4Ni45MzUsNjkuMzc3eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojMEIxMDIzIiBkYXRhLW9sZF9jb2xvcj0iIzAwMDAwMCI+PC9wYXRoPgo8L2c+PC9nPiA8L3N2Zz4=) no-repeat calc(100% - .5em) center / .6em;
+  }
+
+  &-select::-ms-expand {
+    display: none;
+  }
+
+  &-selector {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+    &:focus ~ .form-label::before {
+      box-shadow: $input_focus_shadow rgba($primary, $input_focus_opacity);
+    }
+
+    ~ [class*="label"] {
+      cursor: pointer;
+      position: relative;
+      width: auto;
+      padding-left: 1.5rem;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        transition: $base_transition;
+        width: $selector_width;
+        height: $selector_height;
+        left: 0;
+        top: .07rem;
+      }
+
+      &::before {
+        pointer-events: none;
+        border: 1px solid $selector_border_color;
+        z-index: 1;
+      }
+
+      &::after {
+        z-index: 2;
+        transform: scale(0);
+        opacity: 0;
+      }
+    }
+
+    &[disabled] {
+      ~ .form-label {
+        cursor: not-allowed;
+        &::before,
+        &::after {
+          opacity: .7 !important;
+        }
+      }
+    }
+
+    &:checked {
+      ~ .form-label {
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+
+    // Type radio
+    &[type="radio"] {
+      ~ [class*="label"] {
+        &::before,
+        &::after {
+          border-radius: 50%;
+        }
+
+        &::after {
+          background-color: $primary;
+          border: 1px solid transparent;
+        }
+      }
+
+      &:checked {
+        ~ [class*="label"] {
+          &::before {
+            border-color: $primary;
+          }
+
+          &::after {
+            transform: scale(.7);
+          }
+        }
+      }
+    }
+
+    // Type checkbox
+    &[type="checkbox"] {
+      ~ [class*="label"] {
+        &::before,
+        &::after {
+          border-radius: $input_border_radius;
+        }
+
+        &::before {
+          background-color: transparent;
+        }
+
+        &::after {
+          background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGlkPSJDYXBhXzEiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUxNS41NTYgNTE1LjU1NiIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCA1MTUuNTU2IDUxNS41NTYiIHdpZHRoPSI1MTIiPjxnPjxwYXRoIGQ9Im0wIDI3NC4yMjYgMTc2LjU0OSAxNzYuODg2IDMzOS4wMDctMzM4LjY3Mi00OC42Ny00Ny45OTctMjkwLjMzNyAyOTAtMTI4LjU1My0xMjguNTUyeiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojRkZGRkZGIiBkYXRhLW9sZF9jb2xvcj0iIzAwMDAwMCI+PC9wYXRoPjwvZz4gPC9zdmc+) no-repeat center / .7rem;
+        }
+      }
+
+      &:checked {
+        ~ [class*="label"] {
+          &::before {
+            background-color: $primary;
+            border-color: transparent;
+          }
+
+          &::after {
+            transform: scale(1);
+          }
+        }
+      }
+    }
+  }
+  &-file {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
   }
 }
