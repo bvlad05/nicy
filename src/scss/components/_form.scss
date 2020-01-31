@@ -19,8 +19,8 @@ $input_disabled_background: rgba($dark, .03);
 
 $input_border_color: darken($light, 10%);
 
-$selector_width: 1.1rem;
-$selector_height: 1.1rem;
+$selector_width: 18px;
+$selector_height: 18px;
 $selector_border_color: darken($light, 20%);
 
 @mixin inputIsSmall() {
@@ -285,7 +285,7 @@ $selector_border_color: darken($light, 20%);
           }
 
           &::after {
-            transform: scale(.7);
+            transform: scale(.6);
           }
         }
       }
