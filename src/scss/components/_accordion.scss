@@ -1,0 +1,35 @@
+/*
+Accordion
+Added in: v0.0.1
+*/
+@import "../core/variables/variables";
+@import "../core/mixins/mixins";
+
+.accordion {
+  .collapse {
+    & + .collapse {
+      margin-top: .8rem;
+    }
+
+    .btn {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      > span {
+        flex: 1;
+        text-align: left;
+        padding-right: 1rem;
+      }
+
+      & + * {
+        display: none;
+        &.is-active {
+          display: block;
+          margin: .85em .85em 0 .85em;
+        }
+      }
+    }
+  }
+}
