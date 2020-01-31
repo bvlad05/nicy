@@ -1,0 +1,23 @@
+/*
+Pagination
+Added in: v0.0.1
+*/
+@import "../core/variables/variables";
+@import "../core/mixins/mixins";
+
+.pagination {
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    li {
+      & + li {
+        margin-left: .5rem;
+      }
+      > span {
+        opacity: .5;
+      }
+    }
+  }
+}
