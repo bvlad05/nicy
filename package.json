@@ -43,8 +43,5 @@
   "files": [
     "dist/css/*.{css,map}",
     "src/scss/**/*.scss"
-  ],
-  "dependencies": {
-    "dart-sass": "^1.24.4"
-  }
+  ]
 }
