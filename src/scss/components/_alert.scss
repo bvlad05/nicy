@@ -1,0 +1,30 @@
+/*
+Alert
+Added in: v0.0.1
+*/
+@import "../core/variables/variables";
+@import "../core/mixins/mixins";
+
+@mixin alert($className, $color) {
+  .alert.is-#{$className} {
+    background-color: rgba($color, .2);
+    border: 1px solid rgba($color, .2);
+    color: darken($color, 30%)
+  }
+}
+
+.alert {
+  padding: 1rem;
+  border-radius: $base_border_radius;
+  p {
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include alert('primary', $primary)
+@include alert('success', $success)
+@include alert('warning', $warning)
+@include alert('danger', $danger)
+@include alert('dark', $dark)
