@@ -129,6 +129,7 @@ $btn_shadow_active: 0 1px 1px;
   transition: $btn_transition;
   text-align: center;
   cursor: pointer;
+  word-break: break-word;
 
   &:hover,
   &:active,
