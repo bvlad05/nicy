@@ -1,5 +1,7 @@
 $base_border_radius: .2em;
+$base_border_color: $light;
 $base_transition: ease-in-out .15s;
+$base_shadow: 0 5px 8px rgba($light, .4);
 
 // Buttons, forms
 $base_elem_small_padding: .4em .8em;

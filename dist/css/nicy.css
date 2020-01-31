@@ -720,6 +720,2242 @@ body {
 }
 
 /*
+Alert
+Added in: v0.0.1
+*/
+/*
+Variables
+Added in: v0.0.1
+*/
+/*
+Colors
+Added in: v0.0.1
+*/
+.text-color-light {
+  color: #e2e5f0;
+}
+
+.bg-color-light {
+  background-color: #e2e5f0;
+}
+
+.text-color-light-1 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-1 {
+  background-color: rgba(226, 229, 240, 0.85);
+}
+
+.text-color-light-2 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-2 {
+  background-color: rgba(226, 229, 240, 0.7);
+}
+
+.text-color-light-3 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-3 {
+  background-color: rgba(226, 229, 240, 0.55);
+}
+
+.text-color-light-4 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-4 {
+  background-color: rgba(226, 229, 240, 0.4);
+}
+
+.text-color-light-5 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-5 {
+  background-color: rgba(226, 229, 240, 0.25);
+}
+
+.text-color-light-6 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-6 {
+  background-color: rgba(226, 229, 240, 0.1);
+}
+
+.text-color-dark {
+  color: #0b1023;
+}
+
+.bg-color-dark {
+  background-color: #0b1023;
+}
+
+.text-color-dark-1 {
+  color: #0b1023;
+}
+
+.bg-color-dark-1 {
+  background-color: rgba(11, 16, 35, 0.85);
+}
+
+.text-color-dark-2 {
+  color: #0b1023;
+}
+
+.bg-color-dark-2 {
+  background-color: rgba(11, 16, 35, 0.7);
+}
+
+.text-color-dark-3 {
+  color: #0b1023;
+}
+
+.bg-color-dark-3 {
+  background-color: rgba(11, 16, 35, 0.55);
+}
+
+.text-color-dark-4 {
+  color: #0b1023;
+}
+
+.bg-color-dark-4 {
+  background-color: rgba(11, 16, 35, 0.4);
+}
+
+.text-color-dark-5 {
+  color: #0b1023;
+}
+
+.bg-color-dark-5 {
+  background-color: rgba(11, 16, 35, 0.25);
+}
+
+.text-color-dark-6 {
+  color: #0b1023;
+}
+
+.bg-color-dark-6 {
+  background-color: rgba(11, 16, 35, 0.1);
+}
+
+.text-color-primary {
+  color: #23aaec;
+}
+
+.bg-color-primary {
+  background-color: #23aaec;
+}
+
+.text-color-primary-1 {
+  color: #23aaec;
+}
+
+.bg-color-primary-1 {
+  background-color: rgba(35, 170, 236, 0.85);
+}
+
+.text-color-primary-2 {
+  color: #23aaec;
+}
+
+.bg-color-primary-2 {
+  background-color: rgba(35, 170, 236, 0.7);
+}
+
+.text-color-primary-3 {
+  color: #23aaec;
+}
+
+.bg-color-primary-3 {
+  background-color: rgba(35, 170, 236, 0.55);
+}
+
+.text-color-primary-4 {
+  color: #23aaec;
+}
+
+.bg-color-primary-4 {
+  background-color: rgba(35, 170, 236, 0.4);
+}
+
+.text-color-primary-5 {
+  color: #23aaec;
+}
+
+.bg-color-primary-5 {
+  background-color: rgba(35, 170, 236, 0.25);
+}
+
+.text-color-primary-6 {
+  color: #23aaec;
+}
+
+.bg-color-primary-6 {
+  background-color: rgba(35, 170, 236, 0.1);
+}
+
+.text-color-success {
+  color: #68bb35;
+}
+
+.bg-color-success {
+  background-color: #68bb35;
+}
+
+.text-color-success-1 {
+  color: #68bb35;
+}
+
+.bg-color-success-1 {
+  background-color: rgba(104, 187, 53, 0.85);
+}
+
+.text-color-success-2 {
+  color: #68bb35;
+}
+
+.bg-color-success-2 {
+  background-color: rgba(104, 187, 53, 0.7);
+}
+
+.text-color-success-3 {
+  color: #68bb35;
+}
+
+.bg-color-success-3 {
+  background-color: rgba(104, 187, 53, 0.55);
+}
+
+.text-color-success-4 {
+  color: #68bb35;
+}
+
+.bg-color-success-4 {
+  background-color: rgba(104, 187, 53, 0.4);
+}
+
+.text-color-success-5 {
+  color: #68bb35;
+}
+
+.bg-color-success-5 {
+  background-color: rgba(104, 187, 53, 0.25);
+}
+
+.text-color-success-6 {
+  color: #68bb35;
+}
+
+.bg-color-success-6 {
+  background-color: rgba(104, 187, 53, 0.1);
+}
+
+.text-color-warning {
+  color: #ffa43c;
+}
+
+.bg-color-warning {
+  background-color: #ffa43c;
+}
+
+.text-color-warning-1 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-1 {
+  background-color: rgba(255, 164, 60, 0.85);
+}
+
+.text-color-warning-2 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-2 {
+  background-color: rgba(255, 164, 60, 0.7);
+}
+
+.text-color-warning-3 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-3 {
+  background-color: rgba(255, 164, 60, 0.55);
+}
+
+.text-color-warning-4 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-4 {
+  background-color: rgba(255, 164, 60, 0.4);
+}
+
+.text-color-warning-5 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-5 {
+  background-color: rgba(255, 164, 60, 0.25);
+}
+
+.text-color-warning-6 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-6 {
+  background-color: rgba(255, 164, 60, 0.1);
+}
+
+.text-color-danger {
+  color: #ff5656;
+}
+
+.bg-color-danger {
+  background-color: #ff5656;
+}
+
+.text-color-danger-1 {
+  color: #ff5656;
+}
+
+.bg-color-danger-1 {
+  background-color: rgba(255, 86, 86, 0.85);
+}
+
+.text-color-danger-2 {
+  color: #ff5656;
+}
+
+.bg-color-danger-2 {
+  background-color: rgba(255, 86, 86, 0.7);
+}
+
+.text-color-danger-3 {
+  color: #ff5656;
+}
+
+.bg-color-danger-3 {
+  background-color: rgba(255, 86, 86, 0.55);
+}
+
+.text-color-danger-4 {
+  color: #ff5656;
+}
+
+.bg-color-danger-4 {
+  background-color: rgba(255, 86, 86, 0.4);
+}
+
+.text-color-danger-5 {
+  color: #ff5656;
+}
+
+.bg-color-danger-5 {
+  background-color: rgba(255, 86, 86, 0.25);
+}
+
+.text-color-danger-6 {
+  color: #ff5656;
+}
+
+.bg-color-danger-6 {
+  background-color: rgba(255, 86, 86, 0.1);
+}
+
+/*
+Breakpoints
+Added in: v0.0.1
+*/
+/*
+Mixins
+Added in: v0.0.1
+*/
+/*
+Variables
+Added in: v0.0.1
+*/
+/*
+Colors
+Added in: v0.0.1
+*/
+.text-color-light {
+  color: #e2e5f0;
+}
+
+.bg-color-light {
+  background-color: #e2e5f0;
+}
+
+.text-color-light-1 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-1 {
+  background-color: rgba(226, 229, 240, 0.85);
+}
+
+.text-color-light-2 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-2 {
+  background-color: rgba(226, 229, 240, 0.7);
+}
+
+.text-color-light-3 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-3 {
+  background-color: rgba(226, 229, 240, 0.55);
+}
+
+.text-color-light-4 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-4 {
+  background-color: rgba(226, 229, 240, 0.4);
+}
+
+.text-color-light-5 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-5 {
+  background-color: rgba(226, 229, 240, 0.25);
+}
+
+.text-color-light-6 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-6 {
+  background-color: rgba(226, 229, 240, 0.1);
+}
+
+.text-color-dark {
+  color: #0b1023;
+}
+
+.bg-color-dark {
+  background-color: #0b1023;
+}
+
+.text-color-dark-1 {
+  color: #0b1023;
+}
+
+.bg-color-dark-1 {
+  background-color: rgba(11, 16, 35, 0.85);
+}
+
+.text-color-dark-2 {
+  color: #0b1023;
+}
+
+.bg-color-dark-2 {
+  background-color: rgba(11, 16, 35, 0.7);
+}
+
+.text-color-dark-3 {
+  color: #0b1023;
+}
+
+.bg-color-dark-3 {
+  background-color: rgba(11, 16, 35, 0.55);
+}
+
+.text-color-dark-4 {
+  color: #0b1023;
+}
+
+.bg-color-dark-4 {
+  background-color: rgba(11, 16, 35, 0.4);
+}
+
+.text-color-dark-5 {
+  color: #0b1023;
+}
+
+.bg-color-dark-5 {
+  background-color: rgba(11, 16, 35, 0.25);
+}
+
+.text-color-dark-6 {
+  color: #0b1023;
+}
+
+.bg-color-dark-6 {
+  background-color: rgba(11, 16, 35, 0.1);
+}
+
+.text-color-primary {
+  color: #23aaec;
+}
+
+.bg-color-primary {
+  background-color: #23aaec;
+}
+
+.text-color-primary-1 {
+  color: #23aaec;
+}
+
+.bg-color-primary-1 {
+  background-color: rgba(35, 170, 236, 0.85);
+}
+
+.text-color-primary-2 {
+  color: #23aaec;
+}
+
+.bg-color-primary-2 {
+  background-color: rgba(35, 170, 236, 0.7);
+}
+
+.text-color-primary-3 {
+  color: #23aaec;
+}
+
+.bg-color-primary-3 {
+  background-color: rgba(35, 170, 236, 0.55);
+}
+
+.text-color-primary-4 {
+  color: #23aaec;
+}
+
+.bg-color-primary-4 {
+  background-color: rgba(35, 170, 236, 0.4);
+}
+
+.text-color-primary-5 {
+  color: #23aaec;
+}
+
+.bg-color-primary-5 {
+  background-color: rgba(35, 170, 236, 0.25);
+}
+
+.text-color-primary-6 {
+  color: #23aaec;
+}
+
+.bg-color-primary-6 {
+  background-color: rgba(35, 170, 236, 0.1);
+}
+
+.text-color-success {
+  color: #68bb35;
+}
+
+.bg-color-success {
+  background-color: #68bb35;
+}
+
+.text-color-success-1 {
+  color: #68bb35;
+}
+
+.bg-color-success-1 {
+  background-color: rgba(104, 187, 53, 0.85);
+}
+
+.text-color-success-2 {
+  color: #68bb35;
+}
+
+.bg-color-success-2 {
+  background-color: rgba(104, 187, 53, 0.7);
+}
+
+.text-color-success-3 {
+  color: #68bb35;
+}
+
+.bg-color-success-3 {
+  background-color: rgba(104, 187, 53, 0.55);
+}
+
+.text-color-success-4 {
+  color: #68bb35;
+}
+
+.bg-color-success-4 {
+  background-color: rgba(104, 187, 53, 0.4);
+}
+
+.text-color-success-5 {
+  color: #68bb35;
+}
+
+.bg-color-success-5 {
+  background-color: rgba(104, 187, 53, 0.25);
+}
+
+.text-color-success-6 {
+  color: #68bb35;
+}
+
+.bg-color-success-6 {
+  background-color: rgba(104, 187, 53, 0.1);
+}
+
+.text-color-warning {
+  color: #ffa43c;
+}
+
+.bg-color-warning {
+  background-color: #ffa43c;
+}
+
+.text-color-warning-1 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-1 {
+  background-color: rgba(255, 164, 60, 0.85);
+}
+
+.text-color-warning-2 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-2 {
+  background-color: rgba(255, 164, 60, 0.7);
+}
+
+.text-color-warning-3 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-3 {
+  background-color: rgba(255, 164, 60, 0.55);
+}
+
+.text-color-warning-4 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-4 {
+  background-color: rgba(255, 164, 60, 0.4);
+}
+
+.text-color-warning-5 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-5 {
+  background-color: rgba(255, 164, 60, 0.25);
+}
+
+.text-color-warning-6 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-6 {
+  background-color: rgba(255, 164, 60, 0.1);
+}
+
+.text-color-danger {
+  color: #ff5656;
+}
+
+.bg-color-danger {
+  background-color: #ff5656;
+}
+
+.text-color-danger-1 {
+  color: #ff5656;
+}
+
+.bg-color-danger-1 {
+  background-color: rgba(255, 86, 86, 0.85);
+}
+
+.text-color-danger-2 {
+  color: #ff5656;
+}
+
+.bg-color-danger-2 {
+  background-color: rgba(255, 86, 86, 0.7);
+}
+
+.text-color-danger-3 {
+  color: #ff5656;
+}
+
+.bg-color-danger-3 {
+  background-color: rgba(255, 86, 86, 0.55);
+}
+
+.text-color-danger-4 {
+  color: #ff5656;
+}
+
+.bg-color-danger-4 {
+  background-color: rgba(255, 86, 86, 0.4);
+}
+
+.text-color-danger-5 {
+  color: #ff5656;
+}
+
+.bg-color-danger-5 {
+  background-color: rgba(255, 86, 86, 0.25);
+}
+
+.text-color-danger-6 {
+  color: #ff5656;
+}
+
+.bg-color-danger-6 {
+  background-color: rgba(255, 86, 86, 0.1);
+}
+
+/*
+Breakpoints
+Added in: v0.0.1
+*/
+.alert {
+  padding: 1rem;
+  border-radius: 0.2em;
+}
+
+.alert p:last-of-type {
+  margin-bottom: 0;
+}
+
+.alert.is-primary {
+  background-color: rgba(35, 170, 236, 0.2);
+  border: 1px solid rgba(35, 170, 236, 0.2);
+  color: #094c6d;
+}
+
+.alert.is-success {
+  background-color: rgba(104, 187, 53, 0.2);
+  border: 1px solid rgba(104, 187, 53, 0.2);
+  color: #264413;
+}
+
+.alert.is-warning {
+  background-color: rgba(255, 164, 60, 0.2);
+  border: 1px solid rgba(255, 164, 60, 0.2);
+  color: #a25600;
+}
+
+.alert.is-danger {
+  background-color: rgba(255, 86, 86, 0.2);
+  border: 1px solid rgba(255, 86, 86, 0.2);
+  color: #bc0000;
+}
+
+.alert.is-dark {
+  background-color: rgba(11, 16, 35, 0.2);
+  border: 1px solid rgba(11, 16, 35, 0.2);
+  color: black;
+}
+
+/*
+Badge
+Added in: v0.0.1
+*/
+/*
+Variables
+Added in: v0.0.1
+*/
+/*
+Colors
+Added in: v0.0.1
+*/
+.text-color-light {
+  color: #e2e5f0;
+}
+
+.bg-color-light {
+  background-color: #e2e5f0;
+}
+
+.text-color-light-1 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-1 {
+  background-color: rgba(226, 229, 240, 0.85);
+}
+
+.text-color-light-2 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-2 {
+  background-color: rgba(226, 229, 240, 0.7);
+}
+
+.text-color-light-3 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-3 {
+  background-color: rgba(226, 229, 240, 0.55);
+}
+
+.text-color-light-4 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-4 {
+  background-color: rgba(226, 229, 240, 0.4);
+}
+
+.text-color-light-5 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-5 {
+  background-color: rgba(226, 229, 240, 0.25);
+}
+
+.text-color-light-6 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-6 {
+  background-color: rgba(226, 229, 240, 0.1);
+}
+
+.text-color-dark {
+  color: #0b1023;
+}
+
+.bg-color-dark {
+  background-color: #0b1023;
+}
+
+.text-color-dark-1 {
+  color: #0b1023;
+}
+
+.bg-color-dark-1 {
+  background-color: rgba(11, 16, 35, 0.85);
+}
+
+.text-color-dark-2 {
+  color: #0b1023;
+}
+
+.bg-color-dark-2 {
+  background-color: rgba(11, 16, 35, 0.7);
+}
+
+.text-color-dark-3 {
+  color: #0b1023;
+}
+
+.bg-color-dark-3 {
+  background-color: rgba(11, 16, 35, 0.55);
+}
+
+.text-color-dark-4 {
+  color: #0b1023;
+}
+
+.bg-color-dark-4 {
+  background-color: rgba(11, 16, 35, 0.4);
+}
+
+.text-color-dark-5 {
+  color: #0b1023;
+}
+
+.bg-color-dark-5 {
+  background-color: rgba(11, 16, 35, 0.25);
+}
+
+.text-color-dark-6 {
+  color: #0b1023;
+}
+
+.bg-color-dark-6 {
+  background-color: rgba(11, 16, 35, 0.1);
+}
+
+.text-color-primary {
+  color: #23aaec;
+}
+
+.bg-color-primary {
+  background-color: #23aaec;
+}
+
+.text-color-primary-1 {
+  color: #23aaec;
+}
+
+.bg-color-primary-1 {
+  background-color: rgba(35, 170, 236, 0.85);
+}
+
+.text-color-primary-2 {
+  color: #23aaec;
+}
+
+.bg-color-primary-2 {
+  background-color: rgba(35, 170, 236, 0.7);
+}
+
+.text-color-primary-3 {
+  color: #23aaec;
+}
+
+.bg-color-primary-3 {
+  background-color: rgba(35, 170, 236, 0.55);
+}
+
+.text-color-primary-4 {
+  color: #23aaec;
+}
+
+.bg-color-primary-4 {
+  background-color: rgba(35, 170, 236, 0.4);
+}
+
+.text-color-primary-5 {
+  color: #23aaec;
+}
+
+.bg-color-primary-5 {
+  background-color: rgba(35, 170, 236, 0.25);
+}
+
+.text-color-primary-6 {
+  color: #23aaec;
+}
+
+.bg-color-primary-6 {
+  background-color: rgba(35, 170, 236, 0.1);
+}
+
+.text-color-success {
+  color: #68bb35;
+}
+
+.bg-color-success {
+  background-color: #68bb35;
+}
+
+.text-color-success-1 {
+  color: #68bb35;
+}
+
+.bg-color-success-1 {
+  background-color: rgba(104, 187, 53, 0.85);
+}
+
+.text-color-success-2 {
+  color: #68bb35;
+}
+
+.bg-color-success-2 {
+  background-color: rgba(104, 187, 53, 0.7);
+}
+
+.text-color-success-3 {
+  color: #68bb35;
+}
+
+.bg-color-success-3 {
+  background-color: rgba(104, 187, 53, 0.55);
+}
+
+.text-color-success-4 {
+  color: #68bb35;
+}
+
+.bg-color-success-4 {
+  background-color: rgba(104, 187, 53, 0.4);
+}
+
+.text-color-success-5 {
+  color: #68bb35;
+}
+
+.bg-color-success-5 {
+  background-color: rgba(104, 187, 53, 0.25);
+}
+
+.text-color-success-6 {
+  color: #68bb35;
+}
+
+.bg-color-success-6 {
+  background-color: rgba(104, 187, 53, 0.1);
+}
+
+.text-color-warning {
+  color: #ffa43c;
+}
+
+.bg-color-warning {
+  background-color: #ffa43c;
+}
+
+.text-color-warning-1 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-1 {
+  background-color: rgba(255, 164, 60, 0.85);
+}
+
+.text-color-warning-2 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-2 {
+  background-color: rgba(255, 164, 60, 0.7);
+}
+
+.text-color-warning-3 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-3 {
+  background-color: rgba(255, 164, 60, 0.55);
+}
+
+.text-color-warning-4 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-4 {
+  background-color: rgba(255, 164, 60, 0.4);
+}
+
+.text-color-warning-5 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-5 {
+  background-color: rgba(255, 164, 60, 0.25);
+}
+
+.text-color-warning-6 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-6 {
+  background-color: rgba(255, 164, 60, 0.1);
+}
+
+.text-color-danger {
+  color: #ff5656;
+}
+
+.bg-color-danger {
+  background-color: #ff5656;
+}
+
+.text-color-danger-1 {
+  color: #ff5656;
+}
+
+.bg-color-danger-1 {
+  background-color: rgba(255, 86, 86, 0.85);
+}
+
+.text-color-danger-2 {
+  color: #ff5656;
+}
+
+.bg-color-danger-2 {
+  background-color: rgba(255, 86, 86, 0.7);
+}
+
+.text-color-danger-3 {
+  color: #ff5656;
+}
+
+.bg-color-danger-3 {
+  background-color: rgba(255, 86, 86, 0.55);
+}
+
+.text-color-danger-4 {
+  color: #ff5656;
+}
+
+.bg-color-danger-4 {
+  background-color: rgba(255, 86, 86, 0.4);
+}
+
+.text-color-danger-5 {
+  color: #ff5656;
+}
+
+.bg-color-danger-5 {
+  background-color: rgba(255, 86, 86, 0.25);
+}
+
+.text-color-danger-6 {
+  color: #ff5656;
+}
+
+.bg-color-danger-6 {
+  background-color: rgba(255, 86, 86, 0.1);
+}
+
+/*
+Breakpoints
+Added in: v0.0.1
+*/
+/*
+Mixins
+Added in: v0.0.1
+*/
+/*
+Variables
+Added in: v0.0.1
+*/
+/*
+Colors
+Added in: v0.0.1
+*/
+.text-color-light {
+  color: #e2e5f0;
+}
+
+.bg-color-light {
+  background-color: #e2e5f0;
+}
+
+.text-color-light-1 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-1 {
+  background-color: rgba(226, 229, 240, 0.85);
+}
+
+.text-color-light-2 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-2 {
+  background-color: rgba(226, 229, 240, 0.7);
+}
+
+.text-color-light-3 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-3 {
+  background-color: rgba(226, 229, 240, 0.55);
+}
+
+.text-color-light-4 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-4 {
+  background-color: rgba(226, 229, 240, 0.4);
+}
+
+.text-color-light-5 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-5 {
+  background-color: rgba(226, 229, 240, 0.25);
+}
+
+.text-color-light-6 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-6 {
+  background-color: rgba(226, 229, 240, 0.1);
+}
+
+.text-color-dark {
+  color: #0b1023;
+}
+
+.bg-color-dark {
+  background-color: #0b1023;
+}
+
+.text-color-dark-1 {
+  color: #0b1023;
+}
+
+.bg-color-dark-1 {
+  background-color: rgba(11, 16, 35, 0.85);
+}
+
+.text-color-dark-2 {
+  color: #0b1023;
+}
+
+.bg-color-dark-2 {
+  background-color: rgba(11, 16, 35, 0.7);
+}
+
+.text-color-dark-3 {
+  color: #0b1023;
+}
+
+.bg-color-dark-3 {
+  background-color: rgba(11, 16, 35, 0.55);
+}
+
+.text-color-dark-4 {
+  color: #0b1023;
+}
+
+.bg-color-dark-4 {
+  background-color: rgba(11, 16, 35, 0.4);
+}
+
+.text-color-dark-5 {
+  color: #0b1023;
+}
+
+.bg-color-dark-5 {
+  background-color: rgba(11, 16, 35, 0.25);
+}
+
+.text-color-dark-6 {
+  color: #0b1023;
+}
+
+.bg-color-dark-6 {
+  background-color: rgba(11, 16, 35, 0.1);
+}
+
+.text-color-primary {
+  color: #23aaec;
+}
+
+.bg-color-primary {
+  background-color: #23aaec;
+}
+
+.text-color-primary-1 {
+  color: #23aaec;
+}
+
+.bg-color-primary-1 {
+  background-color: rgba(35, 170, 236, 0.85);
+}
+
+.text-color-primary-2 {
+  color: #23aaec;
+}
+
+.bg-color-primary-2 {
+  background-color: rgba(35, 170, 236, 0.7);
+}
+
+.text-color-primary-3 {
+  color: #23aaec;
+}
+
+.bg-color-primary-3 {
+  background-color: rgba(35, 170, 236, 0.55);
+}
+
+.text-color-primary-4 {
+  color: #23aaec;
+}
+
+.bg-color-primary-4 {
+  background-color: rgba(35, 170, 236, 0.4);
+}
+
+.text-color-primary-5 {
+  color: #23aaec;
+}
+
+.bg-color-primary-5 {
+  background-color: rgba(35, 170, 236, 0.25);
+}
+
+.text-color-primary-6 {
+  color: #23aaec;
+}
+
+.bg-color-primary-6 {
+  background-color: rgba(35, 170, 236, 0.1);
+}
+
+.text-color-success {
+  color: #68bb35;
+}
+
+.bg-color-success {
+  background-color: #68bb35;
+}
+
+.text-color-success-1 {
+  color: #68bb35;
+}
+
+.bg-color-success-1 {
+  background-color: rgba(104, 187, 53, 0.85);
+}
+
+.text-color-success-2 {
+  color: #68bb35;
+}
+
+.bg-color-success-2 {
+  background-color: rgba(104, 187, 53, 0.7);
+}
+
+.text-color-success-3 {
+  color: #68bb35;
+}
+
+.bg-color-success-3 {
+  background-color: rgba(104, 187, 53, 0.55);
+}
+
+.text-color-success-4 {
+  color: #68bb35;
+}
+
+.bg-color-success-4 {
+  background-color: rgba(104, 187, 53, 0.4);
+}
+
+.text-color-success-5 {
+  color: #68bb35;
+}
+
+.bg-color-success-5 {
+  background-color: rgba(104, 187, 53, 0.25);
+}
+
+.text-color-success-6 {
+  color: #68bb35;
+}
+
+.bg-color-success-6 {
+  background-color: rgba(104, 187, 53, 0.1);
+}
+
+.text-color-warning {
+  color: #ffa43c;
+}
+
+.bg-color-warning {
+  background-color: #ffa43c;
+}
+
+.text-color-warning-1 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-1 {
+  background-color: rgba(255, 164, 60, 0.85);
+}
+
+.text-color-warning-2 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-2 {
+  background-color: rgba(255, 164, 60, 0.7);
+}
+
+.text-color-warning-3 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-3 {
+  background-color: rgba(255, 164, 60, 0.55);
+}
+
+.text-color-warning-4 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-4 {
+  background-color: rgba(255, 164, 60, 0.4);
+}
+
+.text-color-warning-5 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-5 {
+  background-color: rgba(255, 164, 60, 0.25);
+}
+
+.text-color-warning-6 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-6 {
+  background-color: rgba(255, 164, 60, 0.1);
+}
+
+.text-color-danger {
+  color: #ff5656;
+}
+
+.bg-color-danger {
+  background-color: #ff5656;
+}
+
+.text-color-danger-1 {
+  color: #ff5656;
+}
+
+.bg-color-danger-1 {
+  background-color: rgba(255, 86, 86, 0.85);
+}
+
+.text-color-danger-2 {
+  color: #ff5656;
+}
+
+.bg-color-danger-2 {
+  background-color: rgba(255, 86, 86, 0.7);
+}
+
+.text-color-danger-3 {
+  color: #ff5656;
+}
+
+.bg-color-danger-3 {
+  background-color: rgba(255, 86, 86, 0.55);
+}
+
+.text-color-danger-4 {
+  color: #ff5656;
+}
+
+.bg-color-danger-4 {
+  background-color: rgba(255, 86, 86, 0.4);
+}
+
+.text-color-danger-5 {
+  color: #ff5656;
+}
+
+.bg-color-danger-5 {
+  background-color: rgba(255, 86, 86, 0.25);
+}
+
+.text-color-danger-6 {
+  color: #ff5656;
+}
+
+.bg-color-danger-6 {
+  background-color: rgba(255, 86, 86, 0.1);
+}
+
+/*
+Breakpoints
+Added in: v0.0.1
+*/
+.badge {
+  line-height: 1;
+  font-size: .75em;
+  border-radius: 0.2em;
+  display: inline-block;
+  font-weight: 400;
+  padding: .3em;
+  background-color: #e2e5f0;
+}
+
+.badge.is-rounded {
+  border-radius: 5rem;
+}
+
+.badge.is-primary {
+  background-color: #23aaec;
+  color: #fff;
+}
+
+.badge.is-success {
+  background-color: #68bb35;
+  color: #fff;
+}
+
+.badge.is-warning {
+  background-color: #ffa43c;
+  color: #fff;
+}
+
+.badge.is-danger {
+  background-color: #ff5656;
+  color: #fff;
+}
+
+.badge.is-dark {
+  background-color: #0b1023;
+  color: #fff;
+}
+
+/*
+Box
+Added in: v0.0.1
+*/
+/*
+Variables
+Added in: v0.0.1
+*/
+/*
+Colors
+Added in: v0.0.1
+*/
+.text-color-light {
+  color: #e2e5f0;
+}
+
+.bg-color-light {
+  background-color: #e2e5f0;
+}
+
+.text-color-light-1 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-1 {
+  background-color: rgba(226, 229, 240, 0.85);
+}
+
+.text-color-light-2 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-2 {
+  background-color: rgba(226, 229, 240, 0.7);
+}
+
+.text-color-light-3 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-3 {
+  background-color: rgba(226, 229, 240, 0.55);
+}
+
+.text-color-light-4 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-4 {
+  background-color: rgba(226, 229, 240, 0.4);
+}
+
+.text-color-light-5 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-5 {
+  background-color: rgba(226, 229, 240, 0.25);
+}
+
+.text-color-light-6 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-6 {
+  background-color: rgba(226, 229, 240, 0.1);
+}
+
+.text-color-dark {
+  color: #0b1023;
+}
+
+.bg-color-dark {
+  background-color: #0b1023;
+}
+
+.text-color-dark-1 {
+  color: #0b1023;
+}
+
+.bg-color-dark-1 {
+  background-color: rgba(11, 16, 35, 0.85);
+}
+
+.text-color-dark-2 {
+  color: #0b1023;
+}
+
+.bg-color-dark-2 {
+  background-color: rgba(11, 16, 35, 0.7);
+}
+
+.text-color-dark-3 {
+  color: #0b1023;
+}
+
+.bg-color-dark-3 {
+  background-color: rgba(11, 16, 35, 0.55);
+}
+
+.text-color-dark-4 {
+  color: #0b1023;
+}
+
+.bg-color-dark-4 {
+  background-color: rgba(11, 16, 35, 0.4);
+}
+
+.text-color-dark-5 {
+  color: #0b1023;
+}
+
+.bg-color-dark-5 {
+  background-color: rgba(11, 16, 35, 0.25);
+}
+
+.text-color-dark-6 {
+  color: #0b1023;
+}
+
+.bg-color-dark-6 {
+  background-color: rgba(11, 16, 35, 0.1);
+}
+
+.text-color-primary {
+  color: #23aaec;
+}
+
+.bg-color-primary {
+  background-color: #23aaec;
+}
+
+.text-color-primary-1 {
+  color: #23aaec;
+}
+
+.bg-color-primary-1 {
+  background-color: rgba(35, 170, 236, 0.85);
+}
+
+.text-color-primary-2 {
+  color: #23aaec;
+}
+
+.bg-color-primary-2 {
+  background-color: rgba(35, 170, 236, 0.7);
+}
+
+.text-color-primary-3 {
+  color: #23aaec;
+}
+
+.bg-color-primary-3 {
+  background-color: rgba(35, 170, 236, 0.55);
+}
+
+.text-color-primary-4 {
+  color: #23aaec;
+}
+
+.bg-color-primary-4 {
+  background-color: rgba(35, 170, 236, 0.4);
+}
+
+.text-color-primary-5 {
+  color: #23aaec;
+}
+
+.bg-color-primary-5 {
+  background-color: rgba(35, 170, 236, 0.25);
+}
+
+.text-color-primary-6 {
+  color: #23aaec;
+}
+
+.bg-color-primary-6 {
+  background-color: rgba(35, 170, 236, 0.1);
+}
+
+.text-color-success {
+  color: #68bb35;
+}
+
+.bg-color-success {
+  background-color: #68bb35;
+}
+
+.text-color-success-1 {
+  color: #68bb35;
+}
+
+.bg-color-success-1 {
+  background-color: rgba(104, 187, 53, 0.85);
+}
+
+.text-color-success-2 {
+  color: #68bb35;
+}
+
+.bg-color-success-2 {
+  background-color: rgba(104, 187, 53, 0.7);
+}
+
+.text-color-success-3 {
+  color: #68bb35;
+}
+
+.bg-color-success-3 {
+  background-color: rgba(104, 187, 53, 0.55);
+}
+
+.text-color-success-4 {
+  color: #68bb35;
+}
+
+.bg-color-success-4 {
+  background-color: rgba(104, 187, 53, 0.4);
+}
+
+.text-color-success-5 {
+  color: #68bb35;
+}
+
+.bg-color-success-5 {
+  background-color: rgba(104, 187, 53, 0.25);
+}
+
+.text-color-success-6 {
+  color: #68bb35;
+}
+
+.bg-color-success-6 {
+  background-color: rgba(104, 187, 53, 0.1);
+}
+
+.text-color-warning {
+  color: #ffa43c;
+}
+
+.bg-color-warning {
+  background-color: #ffa43c;
+}
+
+.text-color-warning-1 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-1 {
+  background-color: rgba(255, 164, 60, 0.85);
+}
+
+.text-color-warning-2 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-2 {
+  background-color: rgba(255, 164, 60, 0.7);
+}
+
+.text-color-warning-3 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-3 {
+  background-color: rgba(255, 164, 60, 0.55);
+}
+
+.text-color-warning-4 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-4 {
+  background-color: rgba(255, 164, 60, 0.4);
+}
+
+.text-color-warning-5 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-5 {
+  background-color: rgba(255, 164, 60, 0.25);
+}
+
+.text-color-warning-6 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-6 {
+  background-color: rgba(255, 164, 60, 0.1);
+}
+
+.text-color-danger {
+  color: #ff5656;
+}
+
+.bg-color-danger {
+  background-color: #ff5656;
+}
+
+.text-color-danger-1 {
+  color: #ff5656;
+}
+
+.bg-color-danger-1 {
+  background-color: rgba(255, 86, 86, 0.85);
+}
+
+.text-color-danger-2 {
+  color: #ff5656;
+}
+
+.bg-color-danger-2 {
+  background-color: rgba(255, 86, 86, 0.7);
+}
+
+.text-color-danger-3 {
+  color: #ff5656;
+}
+
+.bg-color-danger-3 {
+  background-color: rgba(255, 86, 86, 0.55);
+}
+
+.text-color-danger-4 {
+  color: #ff5656;
+}
+
+.bg-color-danger-4 {
+  background-color: rgba(255, 86, 86, 0.4);
+}
+
+.text-color-danger-5 {
+  color: #ff5656;
+}
+
+.bg-color-danger-5 {
+  background-color: rgba(255, 86, 86, 0.25);
+}
+
+.text-color-danger-6 {
+  color: #ff5656;
+}
+
+.bg-color-danger-6 {
+  background-color: rgba(255, 86, 86, 0.1);
+}
+
+/*
+Breakpoints
+Added in: v0.0.1
+*/
+/*
+Mixins
+Added in: v0.0.1
+*/
+/*
+Variables
+Added in: v0.0.1
+*/
+/*
+Colors
+Added in: v0.0.1
+*/
+.text-color-light {
+  color: #e2e5f0;
+}
+
+.bg-color-light {
+  background-color: #e2e5f0;
+}
+
+.text-color-light-1 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-1 {
+  background-color: rgba(226, 229, 240, 0.85);
+}
+
+.text-color-light-2 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-2 {
+  background-color: rgba(226, 229, 240, 0.7);
+}
+
+.text-color-light-3 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-3 {
+  background-color: rgba(226, 229, 240, 0.55);
+}
+
+.text-color-light-4 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-4 {
+  background-color: rgba(226, 229, 240, 0.4);
+}
+
+.text-color-light-5 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-5 {
+  background-color: rgba(226, 229, 240, 0.25);
+}
+
+.text-color-light-6 {
+  color: #e2e5f0;
+}
+
+.bg-color-light-6 {
+  background-color: rgba(226, 229, 240, 0.1);
+}
+
+.text-color-dark {
+  color: #0b1023;
+}
+
+.bg-color-dark {
+  background-color: #0b1023;
+}
+
+.text-color-dark-1 {
+  color: #0b1023;
+}
+
+.bg-color-dark-1 {
+  background-color: rgba(11, 16, 35, 0.85);
+}
+
+.text-color-dark-2 {
+  color: #0b1023;
+}
+
+.bg-color-dark-2 {
+  background-color: rgba(11, 16, 35, 0.7);
+}
+
+.text-color-dark-3 {
+  color: #0b1023;
+}
+
+.bg-color-dark-3 {
+  background-color: rgba(11, 16, 35, 0.55);
+}
+
+.text-color-dark-4 {
+  color: #0b1023;
+}
+
+.bg-color-dark-4 {
+  background-color: rgba(11, 16, 35, 0.4);
+}
+
+.text-color-dark-5 {
+  color: #0b1023;
+}
+
+.bg-color-dark-5 {
+  background-color: rgba(11, 16, 35, 0.25);
+}
+
+.text-color-dark-6 {
+  color: #0b1023;
+}
+
+.bg-color-dark-6 {
+  background-color: rgba(11, 16, 35, 0.1);
+}
+
+.text-color-primary {
+  color: #23aaec;
+}
+
+.bg-color-primary {
+  background-color: #23aaec;
+}
+
+.text-color-primary-1 {
+  color: #23aaec;
+}
+
+.bg-color-primary-1 {
+  background-color: rgba(35, 170, 236, 0.85);
+}
+
+.text-color-primary-2 {
+  color: #23aaec;
+}
+
+.bg-color-primary-2 {
+  background-color: rgba(35, 170, 236, 0.7);
+}
+
+.text-color-primary-3 {
+  color: #23aaec;
+}
+
+.bg-color-primary-3 {
+  background-color: rgba(35, 170, 236, 0.55);
+}
+
+.text-color-primary-4 {
+  color: #23aaec;
+}
+
+.bg-color-primary-4 {
+  background-color: rgba(35, 170, 236, 0.4);
+}
+
+.text-color-primary-5 {
+  color: #23aaec;
+}
+
+.bg-color-primary-5 {
+  background-color: rgba(35, 170, 236, 0.25);
+}
+
+.text-color-primary-6 {
+  color: #23aaec;
+}
+
+.bg-color-primary-6 {
+  background-color: rgba(35, 170, 236, 0.1);
+}
+
+.text-color-success {
+  color: #68bb35;
+}
+
+.bg-color-success {
+  background-color: #68bb35;
+}
+
+.text-color-success-1 {
+  color: #68bb35;
+}
+
+.bg-color-success-1 {
+  background-color: rgba(104, 187, 53, 0.85);
+}
+
+.text-color-success-2 {
+  color: #68bb35;
+}
+
+.bg-color-success-2 {
+  background-color: rgba(104, 187, 53, 0.7);
+}
+
+.text-color-success-3 {
+  color: #68bb35;
+}
+
+.bg-color-success-3 {
+  background-color: rgba(104, 187, 53, 0.55);
+}
+
+.text-color-success-4 {
+  color: #68bb35;
+}
+
+.bg-color-success-4 {
+  background-color: rgba(104, 187, 53, 0.4);
+}
+
+.text-color-success-5 {
+  color: #68bb35;
+}
+
+.bg-color-success-5 {
+  background-color: rgba(104, 187, 53, 0.25);
+}
+
+.text-color-success-6 {
+  color: #68bb35;
+}
+
+.bg-color-success-6 {
+  background-color: rgba(104, 187, 53, 0.1);
+}
+
+.text-color-warning {
+  color: #ffa43c;
+}
+
+.bg-color-warning {
+  background-color: #ffa43c;
+}
+
+.text-color-warning-1 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-1 {
+  background-color: rgba(255, 164, 60, 0.85);
+}
+
+.text-color-warning-2 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-2 {
+  background-color: rgba(255, 164, 60, 0.7);
+}
+
+.text-color-warning-3 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-3 {
+  background-color: rgba(255, 164, 60, 0.55);
+}
+
+.text-color-warning-4 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-4 {
+  background-color: rgba(255, 164, 60, 0.4);
+}
+
+.text-color-warning-5 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-5 {
+  background-color: rgba(255, 164, 60, 0.25);
+}
+
+.text-color-warning-6 {
+  color: #ffa43c;
+}
+
+.bg-color-warning-6 {
+  background-color: rgba(255, 164, 60, 0.1);
+}
+
+.text-color-danger {
+  color: #ff5656;
+}
+
+.bg-color-danger {
+  background-color: #ff5656;
+}
+
+.text-color-danger-1 {
+  color: #ff5656;
+}
+
+.bg-color-danger-1 {
+  background-color: rgba(255, 86, 86, 0.85);
+}
+
+.text-color-danger-2 {
+  color: #ff5656;
+}
+
+.bg-color-danger-2 {
+  background-color: rgba(255, 86, 86, 0.7);
+}
+
+.text-color-danger-3 {
+  color: #ff5656;
+}
+
+.bg-color-danger-3 {
+  background-color: rgba(255, 86, 86, 0.55);
+}
+
+.text-color-danger-4 {
+  color: #ff5656;
+}
+
+.bg-color-danger-4 {
+  background-color: rgba(255, 86, 86, 0.4);
+}
+
+.text-color-danger-5 {
+  color: #ff5656;
+}
+
+.bg-color-danger-5 {
+  background-color: rgba(255, 86, 86, 0.25);
+}
+
+.text-color-danger-6 {
+  color: #ff5656;
+}
+
+.bg-color-danger-6 {
+  background-color: rgba(255, 86, 86, 0.1);
+}
+
+/*
+Breakpoints
+Added in: v0.0.1
+*/
+.box,
+.modal {
+  border-radius: 0.2em;
+  background-color: #fff;
+  border: 1px solid #e2e5f0;
+}
+
+.box-header, .box-body, .box-footer,
+.modal-header,
+.modal-body,
+.modal-footer {
+  padding: .95rem;
+}
+
+.box-header,
+.modal-header {
+  border-bottom: 1px solid #e2e5f0;
+}
+
+.box-header h1, .box-header h2, .box-header h3, .box-header h4, .box-header h5, .box-header h6,
+.modal-header h1,
+.modal-header h2,
+.modal-header h3,
+.modal-header h4,
+.modal-header h5,
+.modal-header h6 {
+  margin: 0;
+}
+
+.box-body + .box-body,
+.box-body + .modal-body,
+.modal-body + .box-body,
+.modal-body + .modal-body {
+  border-top: 1px solid #e2e5f0;
+}
+
+.box-footer,
+.modal-footer {
+  border-top: 1px solid #e2e5f0;
+}
+
+.box.is-shadowed,
+.modal.is-shadowed {
+  box-shadow: 0 5px 8px rgba(226, 229, 240, 0.4);
+}
+
+/*
 Buttons
 Added in: v0.0.1
 */
@@ -2793,8 +5029,8 @@ Added in: v0.0.1
   content: '';
   position: absolute;
   transition: ease-in-out 0.15s;
-  width: 1.1rem;
-  height: 1.1rem;
+  width: 18px;
+  height: 18px;
   left: 0;
   top: .07rem;
 }
@@ -2837,7 +5073,7 @@ Added in: v0.0.1
 }
 
 .form-selector[type="radio"]:checked ~ [class*="label"]::after {
-  transform: scale(0.7);
+  transform: scale(0.6);
 }
 
 .form-selector[type="checkbox"] ~ [class*="label"]::before, .form-selector[type="checkbox"] ~ [class*="label"]::after {
