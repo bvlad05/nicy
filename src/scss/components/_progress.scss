@@ -1,0 +1,101 @@
+/*
+Progress
+Added in: v0.0.1
+*/
+@import "../core/variables/variables";
+@import "../core/mixins/mixins";
+
+$main_class: "progress";
+$base_height: 14px;
+
+$list: (
+  "primary": $primary,
+  "success": $success,
+  "warning": $warning,
+  "danger": $danger,
+  "dark": $dark
+);
+
+$sizes: (
+  "small": .6,
+  "large": 1.4,
+);
+
+.#{$main_class} {
+  position: relative;
+  display: flex;
+  align-items: center;
+  @each $class, $color in $list {
+    &.is-#{$class} {
+      .#{$main_class}-level {
+        background-color: $color;
+        color: #fff;
+        font-size: 1rem;
+      }
+    }
+  }
+  @each $size, $cof in $sizes {
+    &.is-#{$size} {
+      .#{$main_class}-bar {
+        height: $base_height * $cof;
+      }
+      .#{$main_class}-level {
+        &[data-label-middle] {
+          &::before {
+            font-size: $base_height * $cof
+          }
+        }
+      }
+    }
+  }
+  &[data-label-start] {
+    &::before {
+      content: attr(data-label-start);
+      margin-right: 5px;
+    }
+  }
+
+  &[data-label-end] {
+    &::after {
+      content: attr(data-label-end);
+      margin-left: 5px;
+    }
+  }
+
+
+  &[data-label-start],
+  &[data-label-end] {
+    &::before,
+    &::after {
+      line-height: 1;
+    }
+  }
+
+  &-bar {
+    border-radius: $base_border_radius;
+    height: $base_height;
+    width: 100%;
+    position: relative;
+    background-color: $light;
+    flex: 1;
+  }
+
+  &-level {
+    position: relative;
+    height: 100%;
+    border-radius: $base_border_radius;
+    transition: $base_transition;
+    &[data-label-middle] {
+      &::before {
+        content: attr(data-label-middle);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        line-height: 1;
+        opacity: .9;
+        font-size: .85rem;
+      }
+    }
+  }
+}
