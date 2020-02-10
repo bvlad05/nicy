@@ -5,14 +5,6 @@ Added in: v0.0.1
 @import "../core/variables/variables";
 @import "../core/mixins/mixins";
 
-@mixin alert($className, $color) {
-  .alert.is-#{$className} {
-    background-color: rgba($color, .2);
-    border: 1px solid rgba($color, .2);
-    color: darken($color, 30%)
-  }
-}
-
 .alert {
   padding: 1rem;
   border-radius: $base_border_radius;
@@ -21,10 +13,11 @@ Added in: v0.0.1
       margin-bottom: 0;
     }
   }
+  @each $name, $color in $colors {
+    &.is-#{$name} {
+      background-color: rgba($color, .2);
+      border: 1px solid rgba($color, .2);
+      color: darken($color, 30%)
+    }
+  }
 }
-
-@include alert('primary', $primary)
-@include alert('success', $success)
-@include alert('warning', $warning)
-@include alert('danger', $danger)
-@include alert('dark', $dark)

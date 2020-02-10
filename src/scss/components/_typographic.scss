@@ -98,3 +98,21 @@ $weights: 100, 200, 300, 400, 500, 600, 700, 800, 900;
     @include fontWeight($weight);
   }
 }
+
+// Text color
+@each $name, $color in $colors {
+  .text-#{$name} {
+    color: $color;
+  }
+  .bg-#{$name} {
+    background-color: $color;
+  }
+  @for $i from 1 through 6  {
+    .text-#{$name}-#{$i} {
+      color: rgba($color, $i + 1%);
+    }
+    .bg-#{$name}-#{$i} {
+      background-color: rgba($color, 1 - (.15 * $i));
+    }
+  }
+}

@@ -8,14 +8,6 @@ Added in: v0.0.1
 $main_class: "progress";
 $base_height: 14px;
 
-$list: (
-  "primary": $primary,
-  "success": $success,
-  "warning": $warning,
-  "danger": $danger,
-  "dark": $dark
-);
-
 $sizes: (
   "small": .6,
   "large": 1.4,
@@ -25,8 +17,8 @@ $sizes: (
   position: relative;
   display: flex;
   align-items: center;
-  @each $class, $color in $list {
-    &.is-#{$class} {
+  @each $name, $color in $colors {
+    &.is-#{$name} {
       .#{$main_class}-level {
         background-color: $color;
         color: #fff;
@@ -76,7 +68,7 @@ $sizes: (
     height: $base_height;
     width: 100%;
     position: relative;
-    background-color: $light;
+    background-color: map-get($colors, "light");
     flex: 1;
   }
 

@@ -5,13 +5,6 @@ Added in: v0.0.1
 @import "../core/variables/variables";
 @import "../core/mixins/mixins";
 
-@mixin badge($className, $color) {
-  .badge.is-#{$className} {
-    background-color: $color;
-    color: #fff;
-  }
-}
-
 .badge {
   line-height: 1;
   font-size: .75em;
@@ -19,15 +12,14 @@ Added in: v0.0.1
   display: inline-block;
   font-weight: 400;
   padding: .3em;
-  background-color: $light;
+  background-color: map-get($colors, "light");
   &.is-rounded {
     border-radius: 5rem;
   }
+  @each $name, $color in $colors {
+    &.is-#{$name} {
+      background-color: $color;
+      color: #fff;
+    }
+  }
 }
-
-
-@include badge('primary', $primary)
-@include badge('success', $success)
-@include badge('warning', $warning)
-@include badge('danger', $danger)
-@include badge('dark', $dark)
