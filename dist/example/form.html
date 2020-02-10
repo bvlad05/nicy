@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Title</title>
+  <meta charset="UTF-8">
+  <meta name=viewport content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap-reboot.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap-grid.css">
+  <link href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/nicy.css" type="text/css">
+</head>
+<body>
+<div class="container pt-3 pb-5">
+  <div class="row">
+    <div class="col-12 mt-4">
+      <div class="row">
+        <div class="col-12">
+          <h1>Form</h1>
+        </div>
+        <div class="col-12 mt-4">
+          <h4>Default</h4>
+          <div class="form-field">
+            <input type="text" placeholder="Placeholder" class="form-input" value="">
+          </div>
+        </div>
+        <div class="col-12 mt-4">
+          <h4>With label</h4>
+          <div class="form-field">
+            <label class="form-label" for="withLabel">Label</label>
+            <input type="text" id="withLabel" placeholder="Placeholder" class="form-input" value="">
+          </div>
+        </div>
+        <div class="col-12 mt-4">
+          <h4>Readonly</h4>
+          <div class="form-field">
+            <input type="text" placeholder="Placeholder" class="form-input" value="Some value" readonly>
+          </div>
+        </div>
+        <div class="col-12 mt-4">
+          <h4>Disabled</h4>
+          <div class="form-field">
+            <input type="text" placeholder="Placeholder" class="form-input" value="Some value" disabled>
+          </div>
+        </div>
+        <div class="col-12 mt-4">
+          <h4>Small</h4>
+          <div class="form-field">
+            <input type="text" placeholder="Placeholder" class="form-input is-small">
+          </div>
+        </div>
+        <div class="col-12 mt-4">
+          <h4>Large</h4>
+          <div class="form-field">
+            <input type="text" placeholder="Placeholder" class="form-input is-large">
+          </div>
+        </div>
+        <div class="col-12 mt-4">
+          <h4>Is valid</h4>
+          <div class="form-field is-valid">
+            <input type="text" placeholder="Placeholder" class="form-input" value="Valid value">
+            <div class="msg">Message text</div>
+          </div>
+        </div>
+        <div class="col-12 mt-4">
+          <h4>Is invalid</h4>
+          <div class="form-field is-invalid">
+            <input type="text" placeholder="Placeholder" class="form-input" value="Invalid value">
+            <div class="msg">Message text</div>
+          </div>
+        </div>
+        <div class="col-12 mt-4">
+          <h4>With icon</h4>
+          <div class="form-field">
+            <i class="lni-user"></i>
+            <input type="text" placeholder="User name" class="form-input">
+          </div>
+        </div>
+        <div class="col-12 mt-4">
+          <h4>With help text</h4>
+          <div class="form-field">
+            <input type="text" placeholder="Your name" class="form-input">
+            <div class="form-help">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, atque autem dolorum
+              earum hic itaque laboriosam maxime molestiae quisquam quod ullam ut. Est fugiat mollitia nemo neque
+              ratione vel voluptate?
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mt-4">
+          <h4>Textarea</h4>
+          <div class="form-field">
+            <textarea rows="4" class="form-input" placeholder="Type long text..."></textarea>
+          </div>
+        </div>
+        <div class="col-12 mt-4">
+          <h4>Select</h4>
+          <div class="form-field">
+            <select class="form-select">
+              <option value="" disabled selected hidden>Choose option</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-12 mt-4">
+          <h4>Checkbox</h4>
+          <div class="form-field mt-2">
+            <input type="checkbox" id="checkbox1" class="form-selector" checked/>
+            <label for="checkbox1" class="form-label">Option 1</label>
+          </div>
+          <div class="form-field mt-2">
+            <input type="checkbox" id="checkbox2" class="form-selector"/>
+            <label for="checkbox2" class="form-label">Option 2</label>
+          </div>
+          <div class="form-field mt-2">
+            <input type="checkbox" id="checkbox3" class="form-selector" disabled/>
+            <label for="checkbox3" class="form-label">Option 3 (Disabled)</label>
+          </div>
+          <div class="form-field is-valid mt-2">
+            <input type="checkbox" id="checkbox4" class="form-selector" checked />
+            <label for="checkbox4" class="form-label">Option 4 (is valid)</label>
+          </div>
+          <div class="form-field is-invalid mt-2">
+            <input type="checkbox" id="checkbox5" class="form-selector" checked />
+            <label for="checkbox5" class="form-label">Option 5 (is invalid)</label>
+          </div>
+        </div>
+        <div class="col-12 mt-4">
+          <h4>Radio</h4>
+          <div class="form-field mt-2">
+            <input type="radio" id="radio1" class="form-selector" name="exp-radio" checked/>
+            <label for="radio1" class="form-label">Option 1</label>
+          </div>
+          <div class="form-field mt-2">
+            <input type="radio" id="radio2" class="form-selector" name="exp-radio"/>
+            <label for="radio2" class="form-label">Option 2</label>
+          </div>
+          <div class="form-field mt-2">
+            <input type="radio" id="radio3" class="form-selector" disabled/>
+            <label for="radio3" class="form-label">Option 3 (Disabled)</label>
+          </div>
+          <div class="form-field is-valid mt-2">
+            <input type="radio" id="radio4" class="form-selector" checked />
+            <label for="radio4" class="form-label">Option 4 (is valid)</label>
+          </div>
+          <div class="form-field is-invalid mt-2">
+            <input type="radio" id="radio5" class="form-selector" checked />
+            <label for="radio5" class="form-label">Option 5 (is invalid)</label>
+          </div>
+        </div>
+        <!--<div class="col-12 mt-3">
+          <div class="mt-3 mb-5">
+            <div class="form-field mt-5">
+              <input type="file" id="file" class="form-file">
+              <label for="file" class="form-label btn is-primary">Upload File</label>
+            </div>
+          </div>
+        </div>-->
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
