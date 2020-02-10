@@ -10,6 +10,16 @@ $success: #68bb35;
 $warning: #ffa43c;
 $danger: #ff5656;
 
+$colors: (
+  // 'light': #e2e5f0,
+  "dark": $dark,
+  "primary": $primary,
+  "success": $success,
+  "warning": $warning,
+  "danger": $danger
+);
+
+
 @mixin generateColors($name, $color) {
   .text-color-#{$name} {
     color: $color;
