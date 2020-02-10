@@ -1,0 +1,63 @@
+/*
+links
+Added in: v0.0.1
+*/
+@import "../core/variables/variables";
+@import "../core/mixins/mixins";
+
+%link {
+  color: $primary;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba($primary, .5);
+    opacity: 0;
+    transition: $base_transition;
+  }
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    color: $primary;
+  }
+  @each $name, $color in $colors {
+    &.is-#{$name} {
+      color: $color;
+      &::after {
+        background-color: rgba($color, .5);
+      }
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: none;
+        color: $color;
+      }
+    }
+  }
+}
+a:not([class]),
+a {
+  @extend %link;
+}
+a {
+  @each $name, $color in $colors {
+    &.is-#{$name} {
+      color: $color;
+      &::after {
+        background-color: rgba($color, .5);
+      }
+    }
+  }
+}
