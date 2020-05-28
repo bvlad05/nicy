@@ -3,7 +3,9 @@ $base-strong: #0b1023;
 $base-weak: #fff;
 
 $faint-strong: #8994A6;
+$faint-weak-up: #e9eef6;
 $faint-weak: #f6f8fb;
+
 
 $accent-strong: #0057ff;
 $accent-weak: #ebf4ff;
@@ -42,7 +44,7 @@ $weak-colors: (
 
 // Base
 $base_border_radius: .4em;
-$base_border_color: $faint-weak;
+$base_border_color: $faint-weak-up;
 $base_transition: ease-in-out .15s;
 $base_shadow: 0 5px 8px rgba($faint-weak, .4);
 
