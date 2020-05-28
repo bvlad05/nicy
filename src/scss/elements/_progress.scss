@@ -1,9 +1,4 @@
-/*
-Progress
-Added in: v0.0.1
-*/
-@import "../base/variables/variables";
-@import "../base/mixins/mixins";
+@import "../utilities/all";
 
 $main_class: "progress";
 $base_height: 14px;
@@ -17,7 +12,7 @@ $sizes: (
   position: relative;
   display: flex;
   align-items: center;
-  @each $name, $color in $colors {
+  @each $name, $color in $strong-colors {
     &.is-#{$name} {
       .#{$main_class}-level {
         background-color: $color;
@@ -68,7 +63,7 @@ $sizes: (
     height: $base_height;
     width: 100%;
     position: relative;
-    background-color: map-get($colors, "light");
+    background-color: $faint-weak-up;
     flex: 1;
   }
 
