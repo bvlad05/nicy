@@ -1,9 +1,4 @@
-/*
-Form
-Added in: v0.0.1
-*/
-@import "../base/variables/variables";
-@import "../base/mixins/mixins";
+@import "../utilities/all";
 
 // Variables, Mixins
 $input_border_radius: $base_border_radius;
@@ -15,13 +10,13 @@ $input_large_padding: $base_elem_large_padding;
 
 $input_focus_shadow: $base_elem_focus_shadow;
 $input_focus_opacity: $base_elem_focus_opacity;
-$input_disabled_background: rgba($dark, .03);
+$input_disabled_background: rgba($base-strong, .03);
 
-$input_border_color: darken($light, 10%);
+$input_border_color: darken($faint-weak-up, 10%);
 
 $selector_width: 18px;
 $selector_height: 18px;
-$selector_border_color: darken($light, 20%);
+$selector_border_color: darken($faint-weak-up, 20%);
 
 @mixin inputIsSmall() {
   font-size: .8rem;
@@ -98,15 +93,15 @@ $selector_border_color: darken($light, 20%);
 }
 
 ::-webkit-input-placeholder {
-  color: rgba($dark, .3);
+  color: rgba($base-strong, .3);
 }
 
 :-ms-input-placeholder {
-  color: rgba($dark, .3);
+  color: rgba($base-strong, .3);
 }
 
 ::placeholder {
-  color: rgba($dark, .3);
+  color: rgba($base-strong, .3);
 }
 
 .form {
@@ -120,7 +115,7 @@ $selector_border_color: darken($light, 20%);
       font-size: 1em;
       top: .8em;
       left: .7em;
-      color: rgba($dark, .7);
+      color: rgba($base-strong, .7);
       z-index: 2;
 
       ~ [class*="form-input"],
@@ -140,8 +135,8 @@ $selector_border_color: darken($light, 20%);
     }
 
     // Validation form styles
-    @include validationFormStyle("valid", $success);
-    @include validationFormStyle("invalid", $danger);
+    @include validationFormStyle("valid", $success-strong);
+    @include validationFormStyle("invalid", $critic-strong);
   }
 
   &-label {
@@ -164,8 +159,8 @@ $selector_border_color: darken($light, 20%);
     background-color: #fff;
 
     &:focus {
-      box-shadow: $input_focus_shadow rgba($primary, $input_focus_opacity);
-      border-color: $primary;
+      box-shadow: $input_focus_shadow rgba($accent-strong, $input_focus_opacity);
+      border-color: $accent-strong;
       outline: none;
     }
 
@@ -188,7 +183,7 @@ $selector_border_color: darken($light, 20%);
       // padding-right: 0;
       box-shadow: none;
       background-color: transparent;
-      border-color: $light;
+      border-color: $faint-weak;
     }
 
     &[disabled] {
@@ -214,7 +209,7 @@ $selector_border_color: darken($light, 20%);
     opacity: 0;
 
     &:focus ~ .form-label::before {
-      box-shadow: $input_focus_shadow rgba($primary, $input_focus_opacity);
+      box-shadow: $input_focus_shadow rgba($accent-strong, $input_focus_opacity);
     }
 
     ~ [class*="label"] {
@@ -276,7 +271,7 @@ $selector_border_color: darken($light, 20%);
         }
 
         &::after {
-          background-color: $primary;
+          background-color: $accent-strong;
           border: 1px solid transparent;
         }
       }
@@ -284,7 +279,7 @@ $selector_border_color: darken($light, 20%);
       &:checked {
         ~ [class*="label"] {
           &::before {
-            border-color: $primary;
+            border-color: $accent-strong;
           }
 
           &::after {
@@ -314,7 +309,7 @@ $selector_border_color: darken($light, 20%);
       &:checked {
         ~ [class*="label"] {
           &::before {
-            background-color: $primary;
+            background-color: $accent-strong;
             border-color: transparent;
           }
 
