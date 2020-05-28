@@ -1,7 +1,6 @@
-@import "../base/variables/variables";
-@import "../base/mixins/mixins";
+@import "../utilities/all";
 
-.alert {
+.message {
   padding: 1rem;
   border-radius: $base_border_radius;
   p {
@@ -9,7 +8,7 @@
       margin-bottom: 0;
     }
   }
-  @each $name, $color in $colors {
+  @each $name, $color in $strong-colors {
     &.is-#{$name} {
       background-color: rgba($color, .2);
       border: 1px solid rgba($color, .2);
