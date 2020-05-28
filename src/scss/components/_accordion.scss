@@ -1,9 +1,4 @@
-/*
-Accordion
-Added in: v0.0.1
-*/
-@import "../base/variables/variables";
-@import "../base/mixins/mixins";
+@import "../utilities/all";
 
 .accordion {
   .collapse {
@@ -11,8 +6,9 @@ Added in: v0.0.1
       margin-top: .8rem;
     }
 
-    .btn {
+    .button {
       width: 100%;
+      flex: 1;
       display: flex;
       justify-content: space-between;
       align-items: center;
