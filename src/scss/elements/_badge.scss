@@ -1,9 +1,4 @@
-/*
-Badge
-Added in: v0.0.1
-*/
-@import "../base/variables/variables";
-@import "../base/mixins/mixins";
+@import "../utilities/all";
 
 .badge {
   line-height: 1;
@@ -12,14 +7,14 @@ Added in: v0.0.1
   display: inline-block;
   font-weight: 400;
   padding: .3em;
-  background-color: map-get($colors, "light");
+  background-color: $faint-weak;
   &.is-rounded {
     border-radius: 5rem;
   }
-  @each $name, $color in $colors {
+  @each $name, $color in $strong-colors {
     &.is-#{$name} {
       background-color: $color;
-      color: #fff;
+      color: $base-weak;
     }
   }
 }
