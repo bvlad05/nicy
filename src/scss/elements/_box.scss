@@ -1,14 +1,9 @@
-/*
-Box
-Added in: v0.0.1
-*/
-@import "../base/variables/variables";
-@import "../base/mixins/mixins";
+@import "../utilities/all";
 
 .box,
 .modal {
   border-radius: $base_border_radius;
-  background-color: #fff;
+  background-color: $base-weak;
   border: 1px solid $base_border_color;
   &-header,
   &-body,
