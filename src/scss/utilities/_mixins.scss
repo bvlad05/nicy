@@ -1,0 +1,25 @@
+@import "variables";
+
+// Animation
+@mixin animation-rotate {
+  @keyframes animation-rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+// Responsive
+@mixin make-responsive($className) {
+  @each $name, $width in $breakpoints {
+    #{$className}-#{$name} {
+      @media (min-width: $width) {
+        @content
+      }
+    }
+  }
+}

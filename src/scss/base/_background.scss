@@ -1,0 +1,11 @@
+@import "../utilities/all";
+
+// Background color
+@each $name, $color in $weak-colors {
+  .tc-is-#{$name} {
+    color: $color!important;
+  }
+  .bgc-is-#{$name} {
+    background-color: $color!important;
+  }
+}

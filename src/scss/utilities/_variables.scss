@@ -1,0 +1,68 @@
+// Colors
+$base-strong: #0b1023;
+$base-weak: #fff;
+
+$faint-strong: #8994A6;
+$faint-weak: #f6f8fb;
+
+$accent-strong: #0057ff;
+$accent-weak: #ebf4ff;
+
+$complement-strong: #8889e2;
+$complement-weak: #eeecfd;
+
+$critic-strong: #f74545;
+$critic-weak: #fdeded;
+
+$warning-strong: #f8ae4f;
+$warning-weak: #fcebcf;
+
+$success-strong: #27ae60;
+$success-weak: #def8e9;
+
+$strong-colors: (
+  "base-strong": $base-strong,
+  "faint-strong": $faint-strong,
+  "accent-strong": $accent-strong,
+  "complement-strong": $complement-strong,
+  "critic-strong": $critic-strong,
+  "warning-strong": $warning-strong,
+  "success-strong": $success-strong,
+);
+
+$weak-colors: (
+  "base-weak": $base-weak,
+  "faint-weak": $faint-weak,
+  "accent-weak": $accent-weak,
+  "complement-weak": $complement-weak,
+  "critic-weak": $critic-weak,
+  "warning-weak": $warning-weak,
+  "success-weak": $success-weak,
+);
+
+// Base
+$base_border_radius: .4em;
+$base_border_color: $faint-weak;
+$base_transition: ease-in-out .15s;
+$base_shadow: 0 5px 8px rgba($faint-weak, .4);
+
+// Buttons, forms
+$base_elem_small_padding: .4em .8em;
+$base_elem_normal_padding: .45em .9em;
+$base_elem_large_padding: .6em 1.2em;
+
+$base_elem_focus_shadow: 0 0 0 .2em;
+$base_elem_focus_opacity: .2;
+$base_elem_disabled_opacity: .65;
+
+// Breakpoints
+$breakpoints: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+);
+
+@function getBreakpoint($breakpoint) {
+  @return map-get($breakpoints, $breakpoint);
+}

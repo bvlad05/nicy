@@ -1,5 +1,4 @@
-@import "mixins/mixins";
-@import "variables/variables";
+@import "../utilities/all";
 
 html {
   font-size: 16px;
@@ -17,7 +16,7 @@ body {
   font-size: 1rem;
   min-width: 320px;
   overflow-x: hidden;
-  color: $dark;
-  background-color: #fff;
+  color: $base-strong;
+  background-color: $base-weak;
   line-height: 1.5;
 }

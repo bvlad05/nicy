@@ -1,0 +1,134 @@
+@import "../utilities/all";
+
+@keyframes loading-rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+// Variables, Mixins
+$btn_border_radius: $base_border_radius;
+$btn_transition: $base_transition;
+
+$btn_small_padding: $base_elem_small_padding;
+$btn_normal_padding: $base_elem_normal_padding;
+$btn_large_padding: $base_elem_large_padding;
+
+$btn_focus_shadow: $base_elem_focus_shadow;
+$btn_focus_opacity: $base_elem_focus_opacity;
+$btn_disabled_opacity: $base_elem_disabled_opacity;
+
+$btn_shadow_opacity: .4;
+$btn_shadow_regular: 0 5px 8px;
+$btn_shadow_hover: 0 2px 3px;
+$btn_shadow_active: 0 1px 1px;
+
+@mixin btnIsBlock() {
+  display: block;
+  width: 100%;
+}
+
+@mixin button-is-small() {
+  font-size: .8rem;
+  padding: $btn_small_padding;
+}
+
+@mixin button-is-large() {
+  font-size: 1.2rem;
+  padding: $btn_large_padding;
+}
+
+.button {
+  display: inline-block;
+  position: relative;
+  font-size: 1rem;
+  border: none;
+  padding: $btn_normal_padding;
+  border-radius: $btn_border_radius;
+  transition: $btn_transition;
+  text-align: center;
+  cursor: pointer;
+  word-break: break-word;
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+    text-decoration: none;
+  }
+  &.is-small {
+    @include button-is-small();
+  }
+  &.is-large {
+    @include button-is-large();
+  }
+  &[disabled] {
+    opacity: .5;
+    pointer-events: none;
+    box-shadow: none!important;
+  }
+  &.is-loading {
+    color: transparent !important;
+    pointer-events: none!important;
+    box-shadow: none!important;
+    user-select: none!important;
+    &::after {
+      content: '';
+      width: 1.25em;
+      height: 1.25em;
+      position: absolute;
+      border-width: 2px;
+      border-style: solid;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      animation: loading-rotate .4s ease-in-out infinite;
+    }
+  }
+}
+
+@mixin button($class_name, $text_color, $bg_color) {
+  .button.is-#{$class_name} {
+    background-color: $bg_color;
+    color: $text_color;
+    box-shadow: $btn_shadow_regular rgba($bg_color, $btn_shadow_opacity);
+    &:hover {
+      background-color: lighten($bg-color, 3%);
+      box-shadow: $btn_shadow_hover rgba($bg_color, $btn_shadow_opacity);
+    }
+    &:active {
+      background-color: darken($bg-color, 3%);
+      box-shadow: $btn_shadow_active rgba($bg_color, $btn_shadow_opacity);
+    }
+    &:focus {
+      box-shadow: $btn_focus_shadow rgba($bg_color, $btn_focus_opacity);
+    }
+    &.is-loading {
+      &::after {
+        border-color: rgba($text_color, .5);
+        border-top-color: $bg_color;
+        border-bottom-color: $bg_color;
+      }
+    }
+  }
+}
+
+@include button('base-strong', #fff, $base-strong);
+@include button('faint-strong', #fff, $faint-strong);
+@include button('accent-strong', #fff, $accent-strong);
+@include button('complement-strong', #fff, $complement-strong);
+@include button('critic-strong', #fff, $critic-strong);
+@include button('warning-strong', #fff, $warning-strong);
+@include button('success-strong', #fff, $success-strong);
+
+@include button('base-weak', $base-strong, $base-weak);
+@include button('faint-weak', $faint-strong, $faint-weak);
+@include button('accent-weak', $accent-strong, $accent-weak);
+@include button('complement-weak', $complement-strong, $complement-weak);
+@include button('critic-weak', $critic-strong, $critic-weak);
+@include button('warning-weak', $warning-strong, $warning-weak);
+@include button('success-weak', $success-strong, $success-weak);
