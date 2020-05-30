@@ -9,3 +9,9 @@ build:
 
 clean:
 	npm run clean
+
+docs-dev:
+	cd docs && npm run dev
+
+release:
+	npx release-it

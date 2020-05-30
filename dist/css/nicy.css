@@ -665,6 +665,17 @@ h6 {
   margin: .85em .85em 0 .85em;
 }
 
+.header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.header-logo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .pagination ul {
   padding: 0;
   margin: 0;
@@ -1237,24 +1248,6 @@ a:not([class*="btn"]) {
   position: relative;
 }
 
-a:not([class])::after,
-a:not([class*="btn"])::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: rgba(0, 87, 255, 0.5);
-  opacity: 0;
-  transition: ease-in-out 0.15s;
-}
-
-a:not([class]):hover::after,
-a:not([class*="btn"]):hover::after {
-  opacity: 1;
-}
-
 a:hover:not([class]),
 a:hover:not([class*="btn"]), a:active:not([class]),
 a:active:not([class*="btn"]), a:focus:not([class]),
@@ -1266,11 +1259,6 @@ a:focus:not([class*="btn"]) {
 a.link-base-strong:not([class]),
 a.link-base-strong:not([class*="btn"]) {
   color: #0b1023;
-}
-
-a.link-base-strong:not([class])::after,
-a.link-base-strong:not([class*="btn"])::after {
-  background-color: rgba(11, 16, 35, 0.5);
 }
 
 a.link-base-strong:hover:not([class]),
@@ -1286,11 +1274,6 @@ a.link-faint-strong:not([class*="btn"]) {
   color: #8994A6;
 }
 
-a.link-faint-strong:not([class])::after,
-a.link-faint-strong:not([class*="btn"])::after {
-  background-color: rgba(137, 148, 166, 0.5);
-}
-
 a.link-faint-strong:hover:not([class]),
 a.link-faint-strong:hover:not([class*="btn"]), a.link-faint-strong:active:not([class]),
 a.link-faint-strong:active:not([class*="btn"]), a.link-faint-strong:focus:not([class]),
@@ -1302,11 +1285,6 @@ a.link-faint-strong:focus:not([class*="btn"]) {
 a.link-accent-strong:not([class]),
 a.link-accent-strong:not([class*="btn"]) {
   color: #0057ff;
-}
-
-a.link-accent-strong:not([class])::after,
-a.link-accent-strong:not([class*="btn"])::after {
-  background-color: rgba(0, 87, 255, 0.5);
 }
 
 a.link-accent-strong:hover:not([class]),
@@ -1322,11 +1300,6 @@ a.link-complement-strong:not([class*="btn"]) {
   color: #8889e2;
 }
 
-a.link-complement-strong:not([class])::after,
-a.link-complement-strong:not([class*="btn"])::after {
-  background-color: rgba(136, 137, 226, 0.5);
-}
-
 a.link-complement-strong:hover:not([class]),
 a.link-complement-strong:hover:not([class*="btn"]), a.link-complement-strong:active:not([class]),
 a.link-complement-strong:active:not([class*="btn"]), a.link-complement-strong:focus:not([class]),
@@ -1338,11 +1311,6 @@ a.link-complement-strong:focus:not([class*="btn"]) {
 a.link-critic-strong:not([class]),
 a.link-critic-strong:not([class*="btn"]) {
   color: #f74545;
-}
-
-a.link-critic-strong:not([class])::after,
-a.link-critic-strong:not([class*="btn"])::after {
-  background-color: rgba(247, 69, 69, 0.5);
 }
 
 a.link-critic-strong:hover:not([class]),
@@ -1358,11 +1326,6 @@ a.link-warning-strong:not([class*="btn"]) {
   color: #f8ae4f;
 }
 
-a.link-warning-strong:not([class])::after,
-a.link-warning-strong:not([class*="btn"])::after {
-  background-color: rgba(248, 174, 79, 0.5);
-}
-
 a.link-warning-strong:hover:not([class]),
 a.link-warning-strong:hover:not([class*="btn"]), a.link-warning-strong:active:not([class]),
 a.link-warning-strong:active:not([class*="btn"]), a.link-warning-strong:focus:not([class]),
@@ -1374,11 +1337,6 @@ a.link-warning-strong:focus:not([class*="btn"]) {
 a.link-success-strong:not([class]),
 a.link-success-strong:not([class*="btn"]) {
   color: #27ae60;
-}
-
-a.link-success-strong:not([class])::after,
-a.link-success-strong:not([class*="btn"])::after {
-  background-color: rgba(39, 174, 96, 0.5);
 }
 
 a.link-success-strong:hover:not([class]),

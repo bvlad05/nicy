@@ -14,7 +14,7 @@
  */
 module.exports = {
     "ui": {
-        "port": 3001
+        "port": 4001
     },
     "files": [
       'src/scss/**',
@@ -33,7 +33,7 @@ module.exports = {
       "baseDir": "./dist"
     },
     "proxy": false,
-    "port": 3000,
+    "port": 4000,
     "middleware": false,
     "serveStatic": [],
     "ghostMode": {
