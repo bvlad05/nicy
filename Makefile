@@ -14,4 +14,4 @@ docs-dev:
 	cd docs && npm run dev
 
 release:
-	npx release-it
+	dotenv release-it

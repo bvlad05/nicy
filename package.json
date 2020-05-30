@@ -1,6 +1,6 @@
 {
   "name": "nicy",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "CSS Framework",
   "main": "nicy/src/scss/nicy.scss",
   "scripts": {
@@ -36,6 +36,7 @@
     "autoprefixer": "^9.7.4",
     "browser-sync": "^2.26.7",
     "clean-css-cli": "^4.3.0",
+    "dotenv-cli": "^3.1.0",
     "node-sass": "^4.13.0",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^7.1.0",
