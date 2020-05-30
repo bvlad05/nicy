@@ -12,7 +12,8 @@
     "dev:css": "npx node-sass src/scss -o dist/css --source-map=true --output-style=expanded",
     "build:css": "npm-run-all clean dev:css prefixer minify",
     "build:all": "npm-run-all build:css",
-    "serve": "npm-run-all --parallel server watch:css"
+    "serve": "npm-run-all --parallel server watch:css",
+    "release": "dotenv release-it"
   },
   "repository": {
     "type": "git",
@@ -45,5 +46,11 @@
   "files": [
     "dist/css/*.{css,map}",
     "src/scss/**/*.scss"
-  ]
+  ],
+  "npm": {
+    "publish": true
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }

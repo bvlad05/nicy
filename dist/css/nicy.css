@@ -676,6 +676,12 @@ h6 {
   height: auto;
 }
 
+.header-nav .nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .pagination ul {
   padding: 0;
   margin: 0;
