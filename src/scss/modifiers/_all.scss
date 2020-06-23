@@ -1,0 +1,26 @@
+.without-border {
+  border: none!important;
+}
+.without-shadow {
+  box-shadow: none!important;
+}
+.list-unstyled {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.min-vh-100 {
+  min-height: 100vh;
+}
+.vh-100 {
+  height: 100vh;
+}
+.vw-100 {
+  width: 100vw;
+}
+.is-vertical-center {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}

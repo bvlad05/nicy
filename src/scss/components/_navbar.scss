@@ -1,0 +1,50 @@
+@import "../utilities/all";
+
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  &-brand {
+    a {
+      font-size: 30px;
+    }
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  &-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    border-top: 1px solid $faint-weak;
+    @include media(lg) {
+      text-align: right;
+      border-top: none;
+    }
+    li {
+      margin: .75em 0;
+      @include media(lg) {
+        display: inline-block;
+        margin: 0;
+      }
+      &:not(:last-of-type) {
+        @include media(lg) {
+          a:not([class]),
+          a:not([class*="button"]) {
+            margin-right: 2em;
+          }
+          .button {
+            margin-right: .5em;
+          }
+        }
+      }
+    }
+    a,
+    a:not([class]),
+    a:not([class*="button"]) {
+      @extend .link-base-strong;
+    }
+  }
+}

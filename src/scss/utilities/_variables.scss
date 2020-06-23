@@ -6,7 +6,6 @@ $faint-strong: #8994A6;
 $faint-weak-up: #e9eef6;
 $faint-weak: #f6f8fb;
 
-
 $accent-strong: #0057ff;
 $accent-weak: #ebf4ff;
 
@@ -59,10 +58,10 @@ $base_elem_disabled_opacity: .65;
 
 // Breakpoints
 $breakpoints: (
-  "sm": 576px,
-  "md": 768px,
-  "lg": 992px,
-  "xl": 1200px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
 );
 
 @function getBreakpoint($breakpoint) {

@@ -24,10 +24,11 @@
   }
 }
 a:not([class]),
-a:not([class*="btn"]) {
+a:not([class*="button"]) {
   @extend %link;
 }
-a:not([class*="btn"]) {
+a:not([class]),
+a:not([class*="button"]) {
   @each $name, $color in $strong-colors {
     &.link-#{$name} {
       color: $color;

@@ -23,3 +23,29 @@
     }
   }
 }
+
+
+// Media
+@mixin media($media) {
+  @if $media==sm {
+    @media only screen and (min-width: map_get($breakpoints, 'sm')) {
+      @content;
+    }
+  } @else if $media==md {
+    @media only screen and (min-width: map_get($breakpoints, 'md')) {
+      @content;
+    }
+  } @else if $media==lg {
+    @media only screen and (min-width: map_get($breakpoints, 'lg')) {
+      @content;
+    }
+  } @else if $media==xl {
+    @media only screen and (min-width: map_get($breakpoints, 'xl')) {
+      @content;
+    }
+  } @else {
+    @media only screen and (min-width: $media) {
+      @content;
+    }
+  }
+}
